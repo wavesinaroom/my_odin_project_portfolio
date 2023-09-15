@@ -1,5 +1,36 @@
 *{
-  background-color: #292929;
   border: 1px solid #e6973e;
   color: #e6973e;
+}
+
+body{
+  background-color: #292929;
+}
+
+.profile{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "education profile profile contact"
+                        "software profile profile languages";
+}
+
+aside .education{
+  grid-area: education;
+}
+
+aside .software{
+  grid-area: software;
+}
+
+main {
+  grid-area: profile;
+}
+
+aside .contact{
+  grid-area: contact;
+}
+
+aside .languages{
+  grid-area: languages;
 }
