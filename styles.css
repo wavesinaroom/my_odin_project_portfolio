@@ -7,6 +7,14 @@ body{
   background-color: #292929;
 }
 
+h1, h2, h3{
+  font-weight: 300;
+}
+
+p{
+  font-size: 0.9em;
+}
+
 section p {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
