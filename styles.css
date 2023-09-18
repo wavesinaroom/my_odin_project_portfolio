@@ -1,5 +1,4 @@
 *{
-  border: 1px solid #e6973e;
   color: #e6973e;
 }
 
@@ -30,13 +29,16 @@ main {
 }
 
 .education section {
-  background-color: red;
   display: flex;
   align-items: center;
 }
 
 .education section svg{
-  margin-left: 2em;
+  margin-left: 1em;
   margin-right: 2em;
+  margin-bottom: 1em;
 }
 
+.education section p{
+  color: #efefef;
+}
