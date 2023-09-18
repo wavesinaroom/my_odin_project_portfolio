@@ -7,6 +7,16 @@ body{
   background-color: #292929;
 }
 
+section p {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+section h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .profile{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -15,22 +25,18 @@ body{
                         "software profile profile languages";
 }
 
-aside .education{
-  grid-area: education;
-}
-
-aside .software{
-  grid-area: software;
-}
-
 main {
   grid-area: profile;
 }
 
-aside .contact{
-  grid-area: contact;
+.education section {
+  background-color: red;
+  display: flex;
+  align-items: center;
 }
 
-aside .languages{
-  grid-area: languages;
+.education section svg{
+  margin-left: 2em;
+  margin-right: 2em;
 }
+
