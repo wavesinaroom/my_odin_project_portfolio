@@ -1,5 +1,6 @@
 *{
   color: #e6973e;
+  font-family: Consolas;
 }
 
 body{
@@ -41,4 +42,8 @@ main {
 
 .education section p{
   color: #efefef;
+}
+
+text {
+  font-weight: bolder;
 }
