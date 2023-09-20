@@ -7,6 +7,14 @@ body{
   background-color: #292929;
 }
 
+dialog{
+  position:relative;
+  z-index: 2; 
+  margin-left: 0px;
+  left: 0.6em;
+  top: -1em;
+  background-color: #292929;
+}
  h3{
   font-weight: 200;
 }
@@ -41,6 +49,10 @@ main {
   grid-area: profile;
 }
 
+.circle {
+  position: relative;
+  z-index: 1;
+}
 .education section {
   display: flex;
   align-items: center;
@@ -59,3 +71,4 @@ main {
 text {
   font-weight: bolder;
 }
+
