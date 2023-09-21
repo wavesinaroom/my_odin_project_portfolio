@@ -17,8 +17,8 @@ dialog{
   top: -1em;
   background-color: #292929;
 }
- h3{
-  font-weight: 200;
+h3{
+  font-weight: 400;
 }
 
 h1,h2{
@@ -43,18 +43,19 @@ section h3 {
   position: relative;
   z-index: 1;
 }
-.education section {
+
+.qualification {
   display: flex;
   align-items: center;
 }
 
-.education section svg{
+.qualification svg{
   margin-left: 1em;
-  margin-right: 2em;
+  margin-right: 1em;
   margin-bottom: 1em;
 }
 
-.education section p{
+.qualification p{
   color: #efefef;
 }
 
