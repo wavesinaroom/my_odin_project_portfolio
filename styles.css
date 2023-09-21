@@ -59,6 +59,28 @@ section h3 {
   color: #efefef;
 }
 
+.software h3{
+  margin-left: 1em;
+}
+
+.programming-icons{
+  margin-left: 2em;
+}
+
+.programming-icons img{
+  margin: 0.5em;
+}
+
+.tech-icons{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.tech-icons img{
+  margin: 0.5em;
+}
+
 text {
   font-weight: bolder;
 }
