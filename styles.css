@@ -81,6 +81,20 @@ section h3 {
   margin: 0.5em;
 }
 
+.experience-interactive{
+  margin-left: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.experience-interactive article{
+  margin-left: 2em;
+  background-color: #292929;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+
 text {
   font-weight: bolder;
 }

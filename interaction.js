@@ -1,5 +1,6 @@
 const projectInteractives = Array.from(document.getElementsByClassName(`project-interactive`));
 const dialogs = Array.from(document.getElementsByTagName(`dialog`));
+const experienceInteractives = Array.from(document.getElementsByClassName(`experience-interactive`));
 
 projectInteractives.forEach((interactive)=>{
   interactive.children[0].addEventListener(`mouseenter`, ()=>{
@@ -22,4 +23,14 @@ dialogs.forEach((d)=>{
   d.addEventListener(`mouseleave`, ()=>{
     d.open = false;
   });
+})
+
+experienceInteractives.forEach((interactive)=>{
+  interactive.addEventListener(`mouseenter`, ()=>{
+    interactive.children[2].style.display = `contents`;
+  })
+
+  interactive.addEventListener(`mouseleave`, ()=>{
+    interactive.children[2].style.display = `none`;
+  })
 })
