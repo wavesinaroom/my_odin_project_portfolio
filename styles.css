@@ -89,15 +89,26 @@ section h3 {
 }
 
 .experience-interactive{
-  margin-left: 1em;
+  display: flex;
+  margin-bottom: 1em;
 }
 
-.experience-interactive article{
-  margin-left: 2em;
-  background-color: #292929;
-  position: relative;
-  display: none;
-  max-width: 5em;
+.experience-interactive p{
+  color: #efefef;
+}
+
+.experience-interactive svg{
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+details{
+  max-width: 15vw;
+}
+
+details > summary{
+  list-style: none;
 }
 
 text {
