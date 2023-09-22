@@ -9,6 +9,13 @@ body{
   flex-direction: row;
 }
 
+aside{
+  width: 20vw;
+}
+
+main{
+  width: 40vw;
+}
 dialog{
   position:relative;
   z-index: 2; 
@@ -83,16 +90,14 @@ section h3 {
 
 .experience-interactive{
   margin-left: 1em;
-  position: relative;
-  z-index: 1;
 }
 
 .experience-interactive article{
   margin-left: 2em;
   background-color: #292929;
   position: relative;
-  z-index: 2;
   display: none;
+  max-width: 5em;
 }
 
 text {
