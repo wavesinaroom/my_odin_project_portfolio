@@ -27,10 +27,10 @@ dialogs.forEach((d)=>{
 
 experienceInteractives.forEach((interactive)=>{
   interactive.addEventListener(`mouseenter`, ()=>{
-    interactive.children[2].style.display = `contents`;
+    interactive.children[1].open = true;
   })
 
   interactive.addEventListener(`mouseleave`, ()=>{
-    interactive.children[2].style.display = `none`;
+    interactive.children[1].open = false;
   })
 })
