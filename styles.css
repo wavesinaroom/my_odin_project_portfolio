@@ -35,7 +35,8 @@ dialog{
   margin-left: 0px;
   left: 0.6em;
   top: -1em;
-  background-color: black;
+  background-color: var(--black);
+  color: var(--orange);
 }
 
 h1,h2,h4{
