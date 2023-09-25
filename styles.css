@@ -38,8 +38,8 @@ dialog{
   background-color: black;
 }
 
-h1,h2{
-  font-weight: 500;
+h1,h2,h4{
+  font-weight: 300;
 }
 
 h3{
@@ -58,7 +58,7 @@ main{
 
 p{
   font-size: 0.9em;
-  color: white;
+  color: var(--white);
 }
 
 section p {
@@ -71,6 +71,9 @@ section h3 {
   margin-bottom: 0.5em;
 }
 
+span{
+  color:var(--white);
+}
 
 text {
   font-weight: bolder;
