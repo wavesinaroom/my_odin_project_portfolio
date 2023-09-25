@@ -55,6 +55,7 @@ img[src="./images/profile_picture_1.png"]{
 
 main{
   width: 50vw;
+  background-image: "./images/background_1.svg";
 }
 
 p{
@@ -139,3 +140,35 @@ text {
   align-items: center;
 }
 
+#portfolio h1{
+  margin-bottom: 5vh; 
+}
+
+#todo-project{
+  position: relative;
+  left: 40vw;
+}
+
+#weather-project{
+  position: relative;
+  left: 27vw;
+  top: 5vh;
+}
+
+#shop-project{
+  position: relative;
+  left: 18vw;
+  top: 13vh;
+}
+
+#point-project{
+  position: relative;
+  left:10vw;
+  top: 23vh;
+}
+
+#synth-project{
+  position: relative;
+  left: 4vw;
+  top: 32vh;
+}
