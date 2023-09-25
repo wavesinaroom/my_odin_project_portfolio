@@ -13,6 +13,17 @@ aside{
   width: 25vw;
 }
 
+details{
+  max-width: 15vw;
+}
+
+details > summary{
+  list-style: none;
+}
+
+details > p{
+  margin-left: 0.7em;
+}
 main{
   width: 50vw;
 }
@@ -99,7 +110,7 @@ section h3 {
   margin: 0.5em;
 }
 
-.experience-interactive{
+.expandable-interactive{
   display: flex;
   margin-bottom: 1em;
 }
@@ -108,18 +119,10 @@ section h3 {
   color: #efefef;
 }
 
-.experience-interactive svg{
+.expandable-interactive svg{
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
-}
-
-details{
-  max-width: 15vw;
-}
-
-details > summary{
-  list-style: none;
 }
 
 text {
