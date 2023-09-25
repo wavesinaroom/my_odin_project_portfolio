@@ -1,16 +1,20 @@
-*{
-  color: #e6973e;
-  font-family: Consolas;
-}
-
-body{
-  background-color: #292929;
-  display: flex;
-  flex-direction: row;
+:root{
+  --orange: #e6973e;
+  --black: #292929;
+  --white: #efefef;
+  --green: #448588;
 }
 
 aside{
   width: 25vw;
+}
+
+body{
+  color: orange;
+  font-family: Consolas;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
 }
 
 details{
@@ -24,8 +28,22 @@ details > summary{
 details > p{
   margin-left: 0.7em;
 }
-main{
-  width: 50vw;
+
+dialog{
+  position:relative;
+  z-index: 2; 
+  margin-left: 0px;
+  left: 0.6em;
+  top: -1em;
+  background-color: black;
+}
+
+h1,h2{
+  font-weight: 500;
+}
+
+h3{
+  font-weight: 400;
 }
 
 img[src="./images/profile_picture_1.png"]{
@@ -34,25 +52,13 @@ img[src="./images/profile_picture_1.png"]{
   border-radius: 7vw;
 }
 
-dialog{
-  position:relative;
-  z-index: 2; 
-  margin-left: 0px;
-  left: 0.6em;
-  top: -1em;
-  background-color: #292929;
-}
-h3{
-  font-weight: 400;
-}
-
-h1,h2{
-  font-weight: 500;
+main{
+  width: 50vw;
 }
 
 p{
   font-size: 0.9em;
-  color: #efefef;
+  color: white;
 }
 
 section p {
@@ -65,15 +71,22 @@ section h3 {
   margin-bottom: 0.5em;
 }
 
-#profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+text {
+  font-weight: bolder;
 }
 
 .circle {
   position: relative;
   z-index: 1;
+}
+
+.programming-icons{
+  margin-left: 2em;
+}
+
+.programming-icons img{
+  margin: 0.5em;
 }
 
 .qualification {
@@ -85,29 +98,6 @@ section h3 {
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
-}
-
-
-.software h3{
-  margin-left: 1em;
-}
-
-.programming-icons{
-  margin-left: 2em;
-}
-
-.programming-icons img{
-  margin: 0.5em;
-}
-
-.tech-icons{
-  display: flex;
-  flex-direction: column;
-  margin-left: 2em;
-}
-
-.tech-icons img{
-  margin: 0.5em;
 }
 
 .expandable-interactive{
@@ -125,7 +115,23 @@ section h3 {
   margin-bottom: 1em;
 }
 
-text {
-  font-weight: bolder;
+.software h3{
+  margin-left: 1em;
+}
+
+.tech-icons{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.tech-icons img{
+  margin: 0.5em;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
