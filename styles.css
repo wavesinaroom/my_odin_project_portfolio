@@ -197,6 +197,7 @@ text {
   top: 24vh;
 }
 
-#work-experience{
+#work-experience, #soft-skills{
   min-height: 25vh;
 }
+
