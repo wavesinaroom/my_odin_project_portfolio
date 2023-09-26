@@ -7,6 +7,7 @@
 
 aside{
   width: 25vw;
+  min-height: 50vh;
 }
 
 body{
@@ -51,14 +52,13 @@ img[src="./images/profile_picture_1.png"]{
   max-height: 13vh;
   max-width: 13vw;
   border-radius: 7vw;
-  border-style: solid;
-  border-width: 3px;
-  border-color: var(--white);
+  border: 3px solid var(--white);
 }
 
 main{
   width: 50vw;
-  background-image: "./images/background_1.svg";
+  min-height: 100vh;
+  background: no-repeat center/75% url("./images/background_1.png");
 }
 
 p{
