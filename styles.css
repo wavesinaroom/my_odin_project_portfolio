@@ -146,29 +146,29 @@ text {
 
 #todo-project{
   position: relative;
-  left: 42vw;
+  left: 40vw;
 }
 
 #weather-project{
   position: relative;
-  left: 27vw;
+  left: 25vw;
   top: 3vh;
 }
 
 #shop-project{
   position: relative;
-  left: 18vw;
+  left: 16vw;
   top: 8vh;
 }
 
 #point-project{
   position: relative;
-  left:12vw;
+  left:10vw;
   top: 15vh;
 }
 
 #synth-project{
   position: relative;
-  left: 9vw;
+  left: 7vw;
   top: 24vh;
 }
