@@ -19,6 +19,7 @@ body{
   flex-direction: row;
 }
 
+
 details{
   max-width: 13vw;
 }
@@ -75,8 +76,8 @@ p{
 }
 
 section{
-  margin-bottom: 1vh;
-  padding: 1em;
+  margin-bottom: 2vh;
+  padding: 0.3em;
 }
 
 section h2{
