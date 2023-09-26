@@ -40,6 +40,10 @@ dialog{
   color: var(--orange);
 }
 
+footer{
+  font-size: 120%;
+}
+
 h1,h2,h4{
   font-weight: 300;
 }
@@ -53,6 +57,8 @@ img[src="./images/profile_picture_1.png"]{
   max-width: 13vw;
   border-radius: 7vw;
   border: 3px solid var(--white);
+  margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
 main{
@@ -141,6 +147,10 @@ text {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#profile > hgroup{
+  font-size: 165%;
 }
 
 #portfolio h1{
