@@ -51,6 +51,9 @@ img[src="./images/profile_picture_1.png"]{
   max-height: 13vh;
   max-width: 13vw;
   border-radius: 7vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--white);
 }
 
 main{
