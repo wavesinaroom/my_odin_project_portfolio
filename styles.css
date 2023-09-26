@@ -7,7 +7,8 @@
 
 aside{
   width: 25vw;
-  min-height: 50vh;
+  min-height: 100vh;
+  margin-top: 6vh;
 }
 
 body{
@@ -19,21 +20,20 @@ body{
 }
 
 details{
-  max-width: 15vw;
+  max-width: 13vw;
 }
 
 details > summary{
   list-style: none;
-}
-
-details > p{
-  margin-left: 0.7em;
+  font-size: 110%;
+  margin-bottom: 0.5em;
 }
 
 dialog{
   position:absolute;
   z-index: 2; 
   margin-left: 0px;
+  max-width: 15vw;
   left: 0.6em;
   top: 0.6em;
   background-color: var(--black);
@@ -42,6 +42,8 @@ dialog{
 
 footer{
   font-size: 120%;
+  margin-left: 0.5em;
+  top: 150vh;
 }
 
 h1,h2,h4{
@@ -70,6 +72,15 @@ main{
 p{
   font-size: 0.9em;
   color: var(--white);
+}
+
+section{
+  margin-bottom: 1vh;
+  padding: 1em;
+}
+
+section h2{
+  margin-bottom: 2em;
 }
 
 section p {
@@ -184,4 +195,8 @@ text {
   position: relative;
   left: 7vw;
   top: 24vh;
+}
+
+#work-experience{
+  min-height: 25vh;
 }
