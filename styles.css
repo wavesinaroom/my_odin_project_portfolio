@@ -30,11 +30,11 @@ details > p{
 }
 
 dialog{
-  position:relative;
+  position:absolute;
   z-index: 2; 
   margin-left: 0px;
   left: 0.6em;
-  top: -1em;
+  top: 0.6em;
   background-color: var(--black);
   color: var(--orange);
 }
@@ -146,29 +146,29 @@ text {
 
 #todo-project{
   position: relative;
-  left: 40vw;
+  left: 42vw;
 }
 
 #weather-project{
   position: relative;
   left: 27vw;
-  top: 5vh;
+  top: 3vh;
 }
 
 #shop-project{
   position: relative;
   left: 18vw;
-  top: 13vh;
+  top: 8vh;
 }
 
 #point-project{
   position: relative;
-  left:10vw;
-  top: 23vh;
+  left:12vw;
+  top: 15vh;
 }
 
 #synth-project{
   position: relative;
-  left: 4vw;
-  top: 32vh;
+  left: 9vw;
+  top: 24vh;
 }
