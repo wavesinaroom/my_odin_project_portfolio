@@ -18,6 +18,7 @@ projectInteractives.forEach((interactive)=>{
 dialogs.forEach((d)=>{
   d.addEventListener(`mouseenter`, ()=>{
     d.open = true;
+    d.scrollIntoView({behavior: "smooth"});
   });
   
   d.addEventListener(`mouseleave`, ()=>{

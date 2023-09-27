@@ -66,10 +66,13 @@ img[src="./images/profile_picture_1.png"]{
 
 main{
   width: 50vw;
+  min-height: 100vw;
   background: no-repeat center/75% url("./images/blurred.png");
   padding-left: 2vw;
   padding-right:2vw ;
   flex:2;
+  overflow-y: scroll;
+  scrollbar-width:none ;
 }
 
 p{
