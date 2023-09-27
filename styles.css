@@ -73,7 +73,6 @@ main{
 }
 
 p{
-  font-size: 0.95em;
   color: var(--white);
 }
 
@@ -171,33 +170,38 @@ text {
   margin-bottom: 5vh; 
 }
 
+#portfolio div{
+  max-width: 15vw;
+}
+
 #todo-project{
   position: relative;
-  left: 40vw;
+  left: 600px;
+  top: 45px;
 }
 
 #weather-project{
   position: relative;
-  left: 25vw;
-  top: 3vh;
+  left: 375px;
+  top: 75px;
 }
 
 #shop-project{
   position: relative;
-  left: 16vw;
-  top: 8vh;
+  left: 240px;
+  top: 140px;
 }
 
 #point-project{
   position: relative;
-  left:10vw;
-  top: 15vh;
+  left:150px;
+  top: 225px;
 }
 
 #synth-project{
   position: relative;
-  left: 7vw;
-  top: 24vh;
+  left: 105px;
+  top: 360px;
 }
 
 #work-experience{
