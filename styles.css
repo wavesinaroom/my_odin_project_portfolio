@@ -1,6 +1,6 @@
 :root{
   --orange: #e6973e;
-  --black: #292929;
+  --black: #282828;
   --white: #efefef;
   --green: #448588;
 }
@@ -67,11 +67,13 @@ img[src="./images/profile_picture_1.png"]{
 main{
   width: 50vw;
   min-height: 100vh;
-  background: no-repeat center/75% url("./images/background_1.png");
+  background: no-repeat center/75% url("./images/blurred.png");
+  padding-left: 2vw;
+  padding-right:2vw ;
 }
 
 p{
-  font-size: 0.9em;
+  font-size: 0.95em;
   color: var(--white);
 }
 
@@ -81,7 +83,7 @@ section{
 }
 
 section h2{
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 section p {
@@ -198,7 +200,14 @@ text {
   top: 24vh;
 }
 
-#work-experience, #soft-skills{
+#work-experience{
   min-height: 25vh;
 }
 
+#soft-skills{
+  min-height: 15vh;
+}
+
+#soft-skills > details{
+  margin-left: 1em;
+}
