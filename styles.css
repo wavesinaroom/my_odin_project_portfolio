@@ -5,9 +5,25 @@
   --green: #448588;
 }
 
+@media (min-width:1250px){
+  /*body{
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  aside{
+    width: 20vw;
+  }
+
+  main{
+    width: 40vw;
+  }*/
+}
 aside{
   width: 25vw;
   padding-top: 6vh;
+  padding-left: 1em;
+  padding-right: 1em;
   flex: 1;
 }
 
@@ -67,8 +83,6 @@ img[src="./images/profile_picture_1.png"]{
 main{
   width: 50vw;
   background: no-repeat center/75% url("./images/blurred.png");
-  padding-left: 2vw;
-  padding-right:2vw ;
   flex:2;
   overflow-y: scroll;
   scrollbar-width:none ;
@@ -175,7 +189,11 @@ text {
 #profile > hgroup{
   font-size: 165%;
 }
-
+#profile > article >p{
+  text-align: left;
+  text-indent: 3ch;
+  margin-bottom:2em ;
+}
 #portfolio h1{
   margin-bottom: 5vh; 
 }
