@@ -7,8 +7,8 @@
 
 aside{
   width: 25vw;
-  min-height: 100vh;
   margin-top: 6vh;
+  flex: 1;
 }
 
 body{
@@ -66,10 +66,10 @@ img[src="./images/profile_picture_1.png"]{
 
 main{
   width: 50vw;
-  min-height: 100vh;
   background: no-repeat center/75% url("./images/blurred.png");
   padding-left: 2vw;
   padding-right:2vw ;
+  flex:2;
 }
 
 p{
