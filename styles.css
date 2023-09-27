@@ -5,19 +5,26 @@
   --green: #448588;
 }
 
-@media (min-width:1250px){
-  /*body{
-    margin-left: 10vw;
-    margin-right: 10vw;
+@media (min-width:2000px){
+  body{
+    margin-left: 22vw;
+    margin-right: 22vw;
   }
 
   aside{
-    width: 20vw;
+    width: 8vw;
   }
 
+  details>p{
+    max-width: 5vw;
+  }
+
+  dialog>p{
+    max-width: 10vw;
+  }
   main{
-    width: 40vw;
-  }*/
+    width: 25vw;
+  }
 }
 aside{
   width: 25vw;
