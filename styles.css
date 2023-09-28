@@ -26,6 +26,12 @@
     width: 25vw;
   }
 }
+
+@media (max-width: 600px){
+  body{
+    font-size:2vw;
+  }
+}
 aside{
   width: 25vw;
   padding-top: 6vh;
@@ -36,7 +42,7 @@ aside{
 
 body{
   color: orange;
-  font-family: Consolas;
+  font-family: Consolas, monospace;
   background-color: var(--black);
   display: flex;
   flex-direction: row;
