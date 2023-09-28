@@ -31,6 +31,10 @@
   body{
     font-size:2vw;
   }
+  img{
+    max-width: 12px;
+    max-height: 12px;
+  }
 }
 aside{
   width: 25vw;
