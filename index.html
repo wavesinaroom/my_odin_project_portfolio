@@ -8,7 +8,7 @@
       <title>Waves in a room portfolio</title>
     </head>
     <body>
-      <aside>
+      <aside class="panel" id="right">
         <section>
           <h2>Education</h2>
           <div class="qualification">
@@ -129,14 +129,14 @@
               </details>  
           </div>
         </section>
-        <footer>
+        <section id="bottom-banner">
           <hgroup>
             <h2><span>Juan</span> Jáuregui</h2>
             <h3>Fullstack developer</h3>
           </hgroup>
-        </footer>
+        </section>
       </aside>
-      <main>
+      <main id="center">
         <section id="profile">
           <hgroup>
             <h2><span>Juan </span>Jáuregui</h2>
@@ -150,66 +150,66 @@
             <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
           </article>
         </section>
-        <section id="portfolio">
-          <h1>Projects</h1>
-          <div id="todo-project" class="project-interactive">
-            <svg width="24" height="24">
-              <circle fill="#e6972e" r="12" cx="12" cy="12">
-            </svg>
-            <dialog>
-              <h3>Todo-list</h3>
-              <p>Todo list app with a local storage login system in vanilla Javascript HTML and CSS</p>
-              <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
-              <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
-            </dialog>
-          </div>
-          <div id="weather-project" class="project-interactive">
-            <svg class="circle" width="24" height="24">
-              <circle fill="#e6972e" r="12" cx="12" cy="12">
-            </svg>
-            <dialog>
-              <h3>Weather App</h3>
-              <p>Weather App the fetches data from an API</p>
-              <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
-              <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
-            </dialog>
-          </div>
-          <div id="shop-project" class="project-interactive">
-            <svg class="circle" width="24" height="24">
-              <circle fill="#e6972e" r="12" cx="12" cy="12">
-            </svg>
-            <dialog>
-              <h3>Shopping cart</h3>
-              <p>VST and virtual instruments React application</p>
-              <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
-              <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
-            </dialog>
-          </div>
-          <div id="point-project" class="project-interactive">
-            <svg class="circle" width="24" height="24">
-              <circle fill="#e6972e" r="12" cx="12" cy="12">
-            </svg>
-            <dialog>
-              <h3>Sara&apos;s mess</h3>
-              <p>Point and click game made with React</p>
-              <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
-              <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
-            </dialog>
-          </div>
-          <div id="synth-project" class="project-interactive">
-            <svg class="circle" width="24" height="24">
-              <circle fill="#e6972e" r="12" cx="12" cy="12">
-            </svg>
-            <dialog>
-              <h3>FM Synthesizer</h3>
-              <p>FM Synthesizer made with React and the Web Audio API</p>
-              <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
-              <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
-            </dialog>
-          </div>
-        </section>
       </main>
-      <aside>
+      <aside class="panel" id="bottom">
+        <h1>Projects</h1>
+        <div id="todo-project" class="project-interactive">
+          <svg width="24" height="24">
+            <circle fill="#e6972e" r="12" cx="12" cy="12">
+          </svg>
+          <dialog>
+            <h3>Todo-list</h3>
+            <p>Todo list app with a local storage login system in vanilla Javascript HTML and CSS</p>
+            <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
+            <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
+          </dialog>
+        </div>
+        <div id="weather-project" class="project-interactive">
+          <svg class="circle" width="24" height="24">
+            <circle fill="#e6972e" r="12" cx="12" cy="12">
+          </svg>
+          <dialog>
+            <h3>Weather App</h3>
+            <p>Weather App the fetches data from an API</p>
+            <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
+            <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
+          </dialog>
+        </div>
+        <div id="shop-project" class="project-interactive">
+          <svg class="circle" width="24" height="24">
+            <circle fill="#e6972e" r="12" cx="12" cy="12">
+          </svg>
+          <dialog>
+            <h3>Shopping cart</h3>
+            <p>VST and virtual instruments React application</p>
+            <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
+            <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
+          </dialog>
+        </div>
+        <div id="point-project" class="project-interactive">
+          <svg class="circle" width="24" height="24">
+            <circle fill="#e6972e" r="12" cx="12" cy="12">
+          </svg>
+          <dialog>
+            <h3>Sara&apos;s mess</h3>
+            <p>Point and click game made with React</p>
+            <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
+            <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
+          </dialog>
+        </div>
+        <div id="synth-project" class="project-interactive">
+          <svg class="circle" width="24" height="24">
+            <circle fill="#e6972e" r="12" cx="12" cy="12">
+          </svg>
+          <dialog>
+            <h3>FM Synthesizer</h3>
+            <p>FM Synthesizer made with React and the Web Audio API</p>
+            <img width="24" height="24" alt="repository" src="./images/github_icon.png"/>
+            <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
+          </dialog>
+        </div>
+      </aside>
+      <aside class="panel">
         <div>
           <svg id="audio-toggle" width="48" height="48"><img src="./images/loudspeaker_icon.svg" alt="audio-on-off"/></svg>
         </div>

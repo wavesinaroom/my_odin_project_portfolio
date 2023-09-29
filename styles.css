@@ -49,8 +49,11 @@ body{
   color: orange;
   font-family: Consolas, monospace;
   background-color: var(--black);
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: auto / auto / auto;
+  grid-template-columns: auto / auto;
+  grid-template-areas: "left center right"
+                       ". bottom .";
 }
 
 
@@ -73,12 +76,6 @@ dialog{
   top: 0.6em;
   background-color: var(--black);
   color: var(--orange);
-}
-
-footer{
-  font-size: 120%;
-  margin-left: 0.5em;
-  top: 150vh;
 }
 
 h1,h2,h4{
@@ -198,6 +195,12 @@ text {
   margin: 0.5em;
 }
 
+#bottom-banner{
+  font-size: 120%;
+  margin-left: 0.5em;
+  top: 150vh;
+}
+
 #profile {
   display: flex;
   flex-direction: column;
@@ -212,14 +215,30 @@ text {
   text-indent: 3ch;
   margin-bottom:2em ;
 }
-#portfolio h1{
+
+#bottom{
+  grid-area: bottom;
+}
+
+#bottom h1{
   margin-bottom: 5vh; 
 }
 
-#portfolio div{
+#bottom div{
   max-width: 15vw;
 }
 
+#center{
+  grid-area:center;
+}
+
+#left{
+  grid-area: left;
+}
+
+#right{
+  grid-area: right;
+}
 #todo-project{
   position: relative;
   left: 600px;
