@@ -3,6 +3,7 @@ const dialogs = Array.from(document.getElementsByTagName(`dialog`));
 const details = Array.from(document.getElementsByTagName(`details`));
 const panels = Array.from(document.getElementsByClassName("panel"));
 const navButtons = Array.from(document.querySelectorAll(`#nav-buttons > button`));
+const toMainButtons = Array.from(document.getElementsByClassName(`to-main`));
 
 projectInteractives.forEach((interactive)=>{
   interactive.children[0].addEventListener(`mouseenter`, ()=>{
@@ -39,11 +40,18 @@ details.forEach((interactive)=>{
 });
 
 navButtons.forEach((button)=>{
-  const panel = document.getElementById(button.id.slice(3));
   button.addEventListener(`mousedown`, ()=>{
-    panel.style.display = `contents`;
-    panel.scrollIntoView({behavior:`smooth`});
-    document.getElementById(`center`).style.display = `none`;
+    document.getElementById(button.id.slice(3)).style.display = `flex`;
+    document.getElementById(button.id.slice(3)).style.flexDirection = `column`;
+    document.querySelector(`main`).style.display = `none`;
   });
 });
 
+
+toMainButtons.forEach((button)=>{
+  button.addEventListener(`mousedown`, ()=>{
+    document.getElementById(button.id.slice(5)).style.display = `none`;
+    document.querySelector(`main`).style.display = `flex`
+    document.querySelector(`main`).style.flexDirection = `column`
+  })
+})
