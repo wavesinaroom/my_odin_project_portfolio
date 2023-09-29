@@ -218,6 +218,7 @@ text {
 
 #bottom{
   grid-area: bottom;
+  display: none;
 }
 
 #bottom h1{
@@ -234,6 +235,7 @@ text {
 
 #left{
   grid-area: left;
+  display: none;
 }
 
 #right{
