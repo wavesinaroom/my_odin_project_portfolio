@@ -2,7 +2,7 @@ const projectInteractives = Array.from(document.getElementsByClassName(`project-
 const dialogs = Array.from(document.getElementsByTagName(`dialog`));
 const details = Array.from(document.getElementsByTagName(`details`));
 const panels = Array.from(document.getElementsByClassName("panel"));
-const navButtons = Array.from(document.querySelectorAll(`#nav-buttons > button`));
+const navButtons = Array.from(document.querySelectorAll(`#nav-buttons>div > button`));
 const toMainButtons = Array.from(document.getElementsByClassName(`to-main`));
 
 projectInteractives.forEach((interactive)=>{

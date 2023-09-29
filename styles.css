@@ -5,44 +5,13 @@
   --green: #448588;
 }
 
-@media (min-width:2000px){
-  body{
-    margin-left: 22vw;
-    margin-right: 22vw;
-  }
-
-  aside{
-    width: 8vw;
-  }
-
-  details>p{
-    max-width: 5vw;
-  }
-
-  dialog>p{
-    max-width: 10vw;
-  }
-  main{
-    width: 25vw;
-  }
-}
-
-@media (max-width: 600px){
-  body{
-    font-size:2vw;
-  }
-
-  img, #express-icon{
-    max-width: 3vw;
-    max-height: 3vw;
-  }
-}
 aside{
-  width: 100vw;
   padding-top: 6vh;
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
+  width: 100vw;
+  background: no-repeat center/75% url("./images/blurred.png");
 }
 
 body{
