@@ -50,8 +50,6 @@ body{
   font-family: Consolas, monospace;
   background-color: var(--black);
   display: grid;
-  grid-template-rows: auto / auto / auto;
-  grid-template-columns: auto / auto;
   grid-template-areas: "left center right"
                        ". bottom .";
 }
@@ -240,6 +238,7 @@ text {
 
 #right{
   grid-area: right;
+  display: none;
 }
 #todo-project{
   position: relative;
