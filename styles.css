@@ -5,13 +5,51 @@
   --green: #448588;
 }
 
+@keyframes fadeIn{
+  from{
+    display: none;
+    margin-left: 100vw;
+  }
+
+  1%{
+    margin-left: 100vw;
+  } 
+
+  to{
+    margin-left: 0vw;
+  }
+}
+
+@keyframes fadeOut{
+  from{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0vw;
+  }
+
+  to{
+    margin-left: 100vw;
+  }
+}
+
 aside{
+  display: none;
   padding-top: 6vh;
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
-  width: 100vw;
   background: no-repeat center/75% url("./images/blurred.png");
+}
+
+.hide{
+  animation: 1s fadeOut;
+  display: none;
+}
+
+.show{
+  animation: 1s fadeIn;
+  display: flex;
+  flex-direction:column;
 }
 
 body{
@@ -185,7 +223,6 @@ text {
 
 #bottom{
   grid-area: bottom;
-  display: none;
 }
 
 #bottom h1{
@@ -202,12 +239,10 @@ text {
 
 #left{
   grid-area: left;
-  display: none;
 }
 
 #right{
   grid-area: right;
-  display: none;
 }
 #todo-project{
   position: relative;

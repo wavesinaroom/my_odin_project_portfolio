@@ -41,17 +41,15 @@ details.forEach((interactive)=>{
 
 navButtons.forEach((button)=>{
   button.addEventListener(`mousedown`, ()=>{
-    document.getElementById(button.id.slice(3)).style.display = `flex`;
-    document.getElementById(button.id.slice(3)).style.flexDirection = `column`;
-    document.querySelector(`main`).style.display = `none`;
+    document.getElementById(button.id.slice(3)).classList.replace(`hide`, `show`);
+    document.querySelector(`main`).classList.replace(`show`,`hide`);
   });
 });
 
 
 toMainButtons.forEach((button)=>{
   button.addEventListener(`mousedown`, ()=>{
-    document.getElementById(button.id.slice(5)).style.display = `none`;
-    document.querySelector(`main`).style.display = `flex`
-    document.querySelector(`main`).style.flexDirection = `column`
+    document.getElementById(button.id.slice(5)).classList.replace(`show`,`hide`);
+    document.querySelector(`main`).classList.replace(`hide`,`show`);
   })
 })
