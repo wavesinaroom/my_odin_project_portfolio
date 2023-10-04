@@ -38,7 +38,7 @@ aside{
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
-  background: no-repeat center/75% url("./images/blurred.png");
+  width: 100%;
 }
 
 .hide{
@@ -53,12 +53,10 @@ aside{
 }
 
 body{
+  background: no-repeat center/75% url("./images/blurred.png");
   color: orange;
   font-family: Consolas, monospace;
   background-color: var(--black);
-  display: grid;
-  grid-template-areas: "left center right"
-                       ". bottom .";
 }
 
 
@@ -102,7 +100,6 @@ img[src="./images/profile_picture_1.png"]{
 
 main{
   width: 100vw;
-  background: no-repeat center/75% url("./images/blurred.png");
   flex:2;
   overflow-y: scroll;
   scrollbar-width:none ;
@@ -221,29 +218,6 @@ text {
   margin-bottom:2em ;
 }
 
-#bottom{
-  grid-area: bottom;
-}
-
-#bottom h1{
-  margin-bottom: 5vh; 
-}
-
-#bottom div{
-  max-width: 15vw;
-}
-
-#center{
-  grid-area:center;
-}
-
-#left{
-  grid-area: left;
-}
-
-#right{
-  grid-area: right;
-}
 #todo-project{
   position: relative;
   left: 600px;
