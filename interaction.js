@@ -41,15 +41,18 @@ details.forEach((interactive)=>{
 
 navButtons.forEach((button)=>{
   button.addEventListener(`mousedown`, ()=>{
-    document.getElementById(button.id.slice(3)).classList.replace(`hide`, `show`);
-    document.querySelector(`main`).classList.replace(`show`,`hide`);
+    //document.getElementById(button.id.slice(3)).classList.replace(`hide`, `show`);
+    document.querySelector(`main`).classList.replace(`mainIn`,`mainOut`);
+    setTimeout(()=>{
+      document.querySelector(`main`).style.display = `none`;
+    },900);
   });
 });
 
 
 toMainButtons.forEach((button)=>{
   button.addEventListener(`mousedown`, ()=>{
-    document.getElementById(button.id.slice(5)).classList.replace(`show`,`hide`);
-    document.querySelector(`main`).classList.replace(`hide`,`show`);
+    //document.getElementById(button.id.slice(5)).classList.replace(`show`,`hide`);
+    document.querySelector(`main`).classList.replace(`mainOut`,`mainIn`);
   })
 })
