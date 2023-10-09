@@ -1,9 +1,8 @@
 const projectInteractives = Array.from(document.getElementsByClassName(`project-interactive`));
 const dialogs = Array.from(document.getElementsByTagName(`dialog`));
 const details = Array.from(document.getElementsByTagName(`details`));
-const panels = Array.from(document.getElementsByClassName("panel"));
-const navButtons = Array.from(document.querySelectorAll(`#nav-buttons>div > button`));
-const toMainButtons = Array.from(document.getElementsByClassName(`to-main`));
+const panels = Array.from(document.getElementsByClassName(`panel`));
+const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 
 projectInteractives.forEach((interactive)=>{
   interactive.children[0].addEventListener(`mouseenter`, ()=>{
@@ -40,19 +39,13 @@ details.forEach((interactive)=>{
 });
 
 navButtons.forEach((button)=>{
-  button.addEventListener(`mousedown`, ()=>{
-    //document.getElementById(button.id.slice(3)).classList.replace(`hide`, `show`);
-    document.querySelector(`main`).classList.replace(`mainIn`,`mainOut`);
-    setTimeout(()=>{
-      document.querySelector(`main`).style.display = `none`;
-    },900);
-  });
-});
-
-
-toMainButtons.forEach((button)=>{
-  button.addEventListener(`mousedown`, ()=>{
-    //document.getElementById(button.id.slice(5)).classList.replace(`show`,`hide`);
-    document.querySelector(`main`).classList.replace(`mainOut`,`mainIn`);
+  button.addEventListener(`click`, ()=>{
+    for(const panel of panels){
+      if(panel.id===button.dataset.panel)
+        panel.classList.remove(`closed`);
+      else
+        panel.classList.add(`closed`);
+    }
   })
 })
+

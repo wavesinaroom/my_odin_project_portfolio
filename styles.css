@@ -6,20 +6,19 @@
 }
 
 aside{
-  display: none;
+  overflow-y: hidden;
   padding-top: 6vh;
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
-  width: 100%;
 }
+
 body{
   background: no-repeat center/75% url("./images/blurred.png");
   color: orange;
   font-family: Consolas, monospace;
   background-color: var(--black);
 }
-
 
 details{
   max-width: 13vw;
@@ -143,6 +142,20 @@ text {
   margin-bottom: 1em;
 }
 
+.panel{
+  overflow-y:hidden;
+  opacity: 1;
+  max-height:100vh;
+
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.panel.closed{
+  opacity: 0;
+  max-height: 0vh;
+}
 .software h3{
   margin-left: 1em;
 }

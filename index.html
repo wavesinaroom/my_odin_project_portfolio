@@ -5,14 +5,34 @@
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet" href="styles.css"/>
-      <link rel="stylesheet" href="transitions.css"/>
       <title>Waves in a room portfolio</title>
     </head>
     <body>
-      <aside id="left">
+      <header>
         <section>
-          <button class="to-main" id="from-left">Main</button>
+          <button class="panel-button" data-panel="main">Main</button>
+          <button class="panel-button" data-panel="left">Left</button>
+          <button class="panel-button" data-panel="right">Right</button>
+          <button class="panel-button" data-panel="bottom">Bottom</button>
         </section>
+        <svg id="audio-toggle" width="48" height="48"><img src="./images/loudspeaker_icon.svg" alt="audio-on-off"/></svg>
+      </header>
+      <main id="main" class="panel">
+        <section id="profile">
+          <hgroup>
+            <h2><span>Juan </span>Jáuregui</h2>
+            <h3>Fullstack developer</h3>
+          </hgroup>
+          <img alt="Waves in a room profile picture" src="./images/profile_picture_1.png">
+          <article>
+            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
+            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
+            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
+            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
+          </article>
+        </section>
+      </main>
+      <aside id="left" class="panel closed">
         <section>
           <h2>Education</h2>
           <div class="qualification">
@@ -140,33 +160,42 @@
           </hgroup>
         </section>
       </aside>
-      <main class="mainIn">
-        <section id="nav-buttons">
-          <div>
-            <button id="to-left">Left</button>
-            <button id="to-right">Right</button>
-            <button id="to-bottom">Bottom</button>
-          </div>
-          <svg id="audio-toggle" width="48" height="48"><img src="./images/loudspeaker_icon.svg" alt="audio-on-off"/></svg>
+      <aside id="right" class="panel closed">
+        <section id="contact">
+          <h2>Contact</h2>
+          <a href="https://www.linkedin.com/in/wavesinaroom/" target="_blank"><img alt="linkedin_icon" src="./images/linkedin_icon.png"/></a>
+          <a href="https://github.com/wavesinaroom" target="_blank"><img alt="github_icon" src="./images/github_icon.png"/></a>
+          <a href="mailto:juan@wavesinaroom.com" target="_blank"><img alt="mail_icon" src="./images/mail_icon.png"/></a>
+          <a href="https://www.instagram.com/wavesinaroom" target="_blank"><img alt="instagram_icon" src="./images/instagram_icon.png"/></a>
         </section>
-        <section id="profile">
-          <hgroup>
-            <h2><span>Juan </span>Jáuregui</h2>
-            <h3>Fullstack developer</h3>
-          </hgroup>
-          <img alt="Waves in a room profile picture" src="./images/profile_picture_1.png">
-          <article>
-            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
-            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
-            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
-            <p>I'm an experienced musician with more than 5 years tailoring high quality audio production for indie video game projects from 6 countries so far. My thrive to excel in this industry let me join a local company where I was able to promote community events sponsored by Audikinetic, Unity and Platzi as well as supported by audio professionals from companies such as Ubisoft, EA and Eidos. At Ashara Studios, I've been able to build a project under a publisher's contract and projects that have been funded by the Colombian government.</p>
-          </article>
+        <section id="soft-skills">
+          <h2>Soft skills</h2>
+            <details>
+              <summary>Active listening</summary>
+              <p>Beautiful soft skill description</p>
+            </details>
+            <details>
+              <summary>Responsibility</summary>
+              <p>Beautiful soft skill description</p>
+            </details>
+            <details>
+              <summary>Team work</summary>
+              <p>Beautiful soft skill description</p>
+            </details>
+            <details>
+              <summary>Empathy</summary>
+              <p>Beautiful soft skill description</p>
+            </details>
         </section>
-      </main>
-      <aside id="bottom">
-        <section>
-          <button class="to-main" id="from-bottom">Main</button>
+        <section id="languages">
+          <h2>Languages</h2>
+          <ul>
+            <li>English: <span>Professional proficiency</span></li>
+            <li>Spanish: <span>Native proficiency</span></li>
+          </ul>
         </section>
+      </aside>
+      <aside id="bottom" class="panel closed">
         <h1>Projects</h1>
         <div id="todo-project" class="project-interactive">
           <svg width="24" height="24">
@@ -223,44 +252,6 @@
             <img width="24" height="24" alt="live-preview" src="./images/external-link.png"/>
           </dialog>
         </div>
-      </aside>
-      <aside id="right">
-        <section>
-          <button class="to-main" id="from-right">Main</button>
-        </section>
-        <section id="contact">
-          <h2>Contact</h2>
-          <a href="https://www.linkedin.com/in/wavesinaroom/" target="_blank"><img alt="linkedin_icon" src="./images/linkedin_icon.png"/></a>
-          <a href="https://github.com/wavesinaroom" target="_blank"><img alt="github_icon" src="./images/github_icon.png"/></a>
-          <a href="mailto:juan@wavesinaroom.com" target="_blank"><img alt="mail_icon" src="./images/mail_icon.png"/></a>
-          <a href="https://www.instagram.com/wavesinaroom" target="_blank"><img alt="instagram_icon" src="./images/instagram_icon.png"/></a>
-        </section>
-        <section id="soft-skills">
-          <h2>Soft skills</h2>
-            <details>
-              <summary>Active listening</summary>
-              <p>Beautiful soft skill description</p>
-            </details>
-            <details>
-              <summary>Responsibility</summary>
-              <p>Beautiful soft skill description</p>
-            </details>
-            <details>
-              <summary>Team work</summary>
-              <p>Beautiful soft skill description</p>
-            </details>
-            <details>
-              <summary>Empathy</summary>
-              <p>Beautiful soft skill description</p>
-            </details>
-        </section>
-        <section id="languages">
-          <h2>Languages</h2>
-          <ul>
-            <li>English: <span>Professional proficiency</span></li>
-            <li>Spanish: <span>Native proficiency</span></li>
-          </ul>
-        </section>
       </aside>
     </body>
   </html>
