@@ -9,13 +9,17 @@
     </head>
     <body>
       <header>
-        <section>
-          <button class="panel-button" data-panel="main">Main</button>
-          <button class="panel-button" data-panel="left">Left</button>
-          <button class="panel-button" data-panel="right">Right</button>
-          <button class="panel-button" data-panel="bottom">Bottom</button>
+        <section id="dropdown-menu">
+          <button>WHERE TO?</button>
+          <menu>
+            <li><button class="panel-button" data-panel="main">Profile</button></li> 
+            <li><button class="panel-button" data-panel="education">Education</button></li> 
+            <li><button class="panel-button" data-panel="work-experience">Work Experience</button></li> 
+            <li><button class="panel-button" data-panel="strengths">Strengths</button></li> 
+            <li><button class="panel-button" data-panel="contact">Contact</button></li> 
+            <li><button class="panel-button" data-panel="portfolio">Portfolio</button></li> 
+          </menu>
         </section>
-        <svg id="audio-toggle" width="48" height="48"><img src="./images/loudspeaker_icon.svg" alt="audio-on-off"/></svg>
       </header>
       <main id="main" class="panel">
         <section id="profile">

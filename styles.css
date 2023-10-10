@@ -1,8 +1,16 @@
 :root{
+  --black-100: #ff9800;
+  --black-200: #282828;
+  --black-300: #3f3f3f;
+  --black-400: #575757;
+  --black-500: #717171;
+  --black-600: #8b8b8b;
+  --white-100: #d0d0d0;
+  --white-200: #e1e1e1;
+  --white-300: #ececec;
+  --white-400: #f6f6f6;
+  --white-500: #ffffff;
   --orange: #e6973e;
-  --black: #282828;
-  --white: #efefef;
-  --green: #448588;
 }
 
 aside{
@@ -15,7 +23,7 @@ aside{
 body{
   margin-left: 30vw;
   margin-right: 30vw;
-  background-color: var(--black);
+  background-color: var(--black-200);
   color: var(--orange);
   font-family: Consolas, monospace;
 }
@@ -27,6 +35,16 @@ body{
   }
 }
 
+button{
+  all: initial;
+  background-color: var(--black-400);
+  color: var(--white-100);
+  font: inherit;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
 details{
   max-width: 13vw;
 }
@@ -44,7 +62,7 @@ dialog{
   max-width: 15vw;
   left: 0.6em;
   top: 0.6em;
-  background-color: var(--black);
+  background-color: var(--black-200);
   color: var(--orange);
 }
 
@@ -60,7 +78,7 @@ img[src="./images/profile_picture_1.png"]{
   max-height: 13vh;
   max-width: 13vw;
   border-radius: 7vw;
-  border: 3px solid var(--white);
+  border: 3px solid var(--white-500);
   margin-top: 2vh;
   margin-bottom: 3vh;
 }
@@ -78,8 +96,32 @@ main::-webkit-scrollbar{
   display: none;
 }
 
+menu{
+  display: block;
+  position:absolute;
+  left: 0;
+  z-index: 1;
+  padding-left:5px ;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+menu>li{
+  list-style: none;
+}
+
+menu>li>button{
+  min-width: 9em;
+  font-size: 0.8em;
+}
+
+menu>li>button:hover{
+  background-color: var(--orange);
+  color:black;
+}
+
 p{
-  color: var(--white);
+  color: var(--white-500);
 }
 
 section{
@@ -102,7 +144,7 @@ section h3 {
 }
 
 span{
-  color:var(--white);
+  color:var(--white-500);
 }
 
 text {
@@ -149,9 +191,8 @@ text {
 }
 
 .panel{
-  overflow-y:hidden;
   opacity: 1;
-  max-height:100vh;
+  height:100vh;
 
   transition-property: all;
   transition-duration: 1s;
@@ -160,7 +201,7 @@ text {
 
 .panel.closed{
   opacity: 0;
-  max-height: 0vh;
+  height: 0vh;
 }
 .software h3{
   margin-left: 1em;
@@ -182,6 +223,10 @@ text {
   top: 150vh;
 }
 
+#dropdown-menu{
+    display: block;
+  position:relative;
+}
 #profile {
   display: flex;
   flex-direction: column;
