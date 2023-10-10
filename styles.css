@@ -7,17 +7,24 @@
 
 aside{
   overflow-y: hidden;
-  padding-top: 6vh;
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
 }
 
 body{
-  background: no-repeat center/75% url("./images/blurred.png");
-  color: orange;
-  font-family: Consolas, monospace;
+  margin-left: 30vw;
+  margin-right: 30vw;
   background-color: var(--black);
+  color: var(--orange);
+  font-family: Consolas, monospace;
+}
+
+@media (max-width:600px){
+  body{
+    margin-left: 0vw;
+    margin-right:0vw;
+  }
 }
 
 details{
@@ -59,7 +66,6 @@ img[src="./images/profile_picture_1.png"]{
 }
 
 main{
-  width: 100vw;
   flex:2;
 
 }
