@@ -3,6 +3,7 @@ const dialogs = Array.from(document.getElementsByTagName(`dialog`));
 const details = Array.from(document.getElementsByTagName(`details`));
 const panels = Array.from(document.getElementsByClassName(`panel`));
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
+const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
 
 projectInteractives.forEach((interactive)=>{
   interactive.children[0].addEventListener(`mouseenter`, ()=>{
@@ -47,5 +48,11 @@ navButtons.forEach((button)=>{
         panel.classList.add(`closed`);
     }
   })
+})
+
+
+dropDownMenuButton.addEventListener(`click`, ()=>{
+  dropDownMenuButton.style.backgroundColor = `var(--black-100)`;
+  document.querySelector(`#dropdown-menu>menu`).style.display = `block`;
 })
 

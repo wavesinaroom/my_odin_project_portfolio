@@ -1,5 +1,5 @@
 :root{
-  --black-100: #ff9800;
+  --black-100: #1c1c1c;
   --black-200: #282828;
   --black-300: #3f3f3f;
   --black-400: #575757;
@@ -10,7 +10,7 @@
   --white-300: #ececec;
   --white-400: #f6f6f6;
   --white-500: #ffffff;
-  --orange: #e6973e;
+  --orange: #ff9921;
 }
 
 aside{
@@ -97,7 +97,8 @@ main::-webkit-scrollbar{
 }
 
 menu{
-  display: block;
+  box-shadow: 5px 5px 1px var(--black-300);
+  display: none;
   position:absolute;
   left: 0;
   z-index: 1;
@@ -224,7 +225,7 @@ text {
 }
 
 #dropdown-menu{
-    display: block;
+  display: block;
   position:relative;
 }
 #profile {
