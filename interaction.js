@@ -50,9 +50,12 @@ navButtons.forEach((button)=>{
   })
 })
 
-
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.style.backgroundColor = `var(--black-100)`;
   document.querySelector(`#dropdown-menu>menu`).style.display = `block`;
 })
 
+dropDownMenuButton.addEventListener(`focusout`, ()=>{
+  dropDownMenuButton.style.backgroundColor = `var(--black-400)`
+  document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
+})
