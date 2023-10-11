@@ -45,8 +45,10 @@ dropDownMenuButton.addEventListener(`click`, ()=>{
 })
 
 document.addEventListener(`click`, (e)=>{
-  if(!e.target.closest(`#dropdown-menu>button`))
+  if(!e.target.closest(`#dropdown-menu>button`)){
+    dropDownMenuButton.style.backgroundColor = `var(--gray-300)`;
     document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
+  }
 })
 navButtons.forEach((button)=>{
   button.addEventListener(`click`, ()=>{
