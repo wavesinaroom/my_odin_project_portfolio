@@ -16,7 +16,7 @@ aside{
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body{
@@ -38,7 +38,7 @@ body{
 
 button{
   all: initial;
-  background-color: var(--gray-300);
+  background-color: var(--gray-200);
   color: var(--white-100);
   font: inherit;
   padding-top: 0.5em;
@@ -91,6 +91,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
+  position: -webkit-sticky;
   top: 0px;
 }
 
@@ -111,7 +112,7 @@ img[src="./images/profile_picture_1.png"]{
   max-height: 13vh;
   max-width: 13vw;
   border-radius: 7vw;
-  border: 3px solid var(--white-500);
+  border: 3px solid var(--white-100);
   margin-top: 2vh;
   margin-bottom: 3vh;
 }
@@ -122,7 +123,7 @@ input[type="radio"]{
 
 input[type="radio"]+label{
   color: var(--white-100) ;
-  background-color: var(--gray-300);
+  background-color: var(--gray-200);
   text-align: center;
   width: 4.7em;
   padding-bottom: 0.5em;
@@ -136,19 +137,20 @@ input[type="radio"]:checked + label{
 
 legend{
   color:var(--white-100);
-  background-color:var(--black-100);
+  background-color:var(--black-200);
   padding-left: 1em;
   padding-right: 1em;
   padding-top:0.5em ;
   padding-bottom: 0.5em;
 }
+
 main{
   flex:2;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 menu{
-  box-shadow: 5px 5px 1px var(--black-300);
+  box-shadow: 3px 3px 1px var(--gray-100);
   display: none;
   position:absolute;
   left: 0;
