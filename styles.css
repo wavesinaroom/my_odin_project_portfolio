@@ -66,6 +66,16 @@ dialog{
   color: var(--orange);
 }
 
+fieldset{
+  all: initial;
+  display: inline-flex;
+  font-family: inherit;
+}
+
+fieldset>div{
+  display: flex;
+}
+
 h1,h2,h4{
   font-weight: 300;
 }
@@ -74,6 +84,20 @@ h3{
   font-weight: 400;
 }
 
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header>section:first-child{
+  display: block;
+  position:relative;
+}
+
+header>section:nth-child(2){
+  display: flex;
+}
 img[src="./images/profile_picture_1.png"]{
   max-height: 13vh;
   max-width: 13vw;
@@ -83,9 +107,34 @@ img[src="./images/profile_picture_1.png"]{
   margin-bottom: 3vh;
 }
 
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"]+label{
+  color: var(--white-100) ;
+  background-color: var(--black-400);
+  text-align: center;
+  width: 4.7em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+input[type="radio"]:checked + label{
+  font: inherit;
+  background-color: var(--orange);
+  color: var(--black-100);
+}
+
+legend{
+  color:var(--white-100);
+  background-color:var(--black-100);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top:0.5em ;
+  padding-bottom: 0.5em;
+}
 main{
   flex:2;
-
 }
 
 main::-ms-scrollbar{
@@ -125,6 +174,9 @@ p{
   color: var(--white-500);
 }
 
+input[type="radio"]{
+  background-color: var(--black-400); 
+}
 section{
   margin-bottom: 2vh;
   padding: 0.3em;
@@ -224,10 +276,6 @@ text {
   top: 150vh;
 }
 
-#dropdown-menu{
-  display: block;
-  position:relative;
-}
 #profile {
   display: flex;
   flex-direction: column;
