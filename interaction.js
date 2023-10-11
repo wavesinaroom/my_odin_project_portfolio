@@ -39,23 +39,18 @@ details.forEach((interactive)=>{
   });
 });
 
-navButtons.forEach((button)=>{
-  button.addEventListener(`click`, ()=>{
-    for(const panel of panels){
-      if(panel.id===button.dataset.panel)
-        panel.classList.remove(`closed`);
-      else
-        panel.classList.add(`closed`);
-    }
-  })
-})
-
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.style.backgroundColor = `var(--black-100)`;
   document.querySelector(`#dropdown-menu>menu`).style.display = `block`;
 })
 
-dropDownMenuButton.addEventListener(`focusout`, ()=>{
-  dropDownMenuButton.style.backgroundColor = `var(--black-400)`
-  document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
+document.addEventListener(`click`, (e)=>{
+  if(!e.target.closest(`#dropdown-menu>button`))
+    document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
+})
+navButtons.forEach((button)=>{
+  button.addEventListener(`click`, ()=>{
+    document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
+    document.getElementById(button.dataset.panel).scrollIntoView({behavior:`smooth`});
+  })
 })

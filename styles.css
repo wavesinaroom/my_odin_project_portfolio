@@ -14,10 +14,10 @@
 }
 
 aside{
-  overflow-y: hidden;
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
+  height: 100vh;
 }
 
 body{
@@ -88,6 +88,7 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: sticky;
 }
 
 header>section:first-child{
@@ -135,6 +136,7 @@ legend{
 }
 main{
   flex:2;
+  height: 100vh;
 }
 
 main::-ms-scrollbar{
@@ -243,19 +245,6 @@ text {
   margin-bottom: 1em;
 }
 
-.panel{
-  opacity: 1;
-  height:100vh;
-
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-}
-
-.panel.closed{
-  opacity: 0;
-  height: 0vh;
-}
 .software h3{
   margin-left: 1em;
 }
