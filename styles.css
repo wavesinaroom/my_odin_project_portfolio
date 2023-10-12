@@ -20,13 +20,13 @@ aside{
 }
 
 body{
+  background-color: var(--black-200);
+  color: var(--orange);
+  font-family: Consolas, monospace;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 30vw;
   margin-right: 30vw;
-  background-color: var(--black-300);
-  color: var(--orange);
-  font-family: Consolas, monospace;
 }
 
 @media (max-width:600px){
@@ -36,6 +36,9 @@ body{
   }
 }
 
+body>aside, body>main{
+  background-color: var(--black-300);
+}
 button{
   all: initial;
   background-color: var(--gray-200);
