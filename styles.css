@@ -117,13 +117,13 @@ hgroup{
   text-align: center;
 }
 
-img[src="./images/profile_picture_1.png"]{
+img[src="./images/profile_picture_1.1.png"]{
   max-height: 13vh;
   max-width: 13vw;
   border-radius: 7vw;
   border: 3px solid var(--white-100);
-  margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 input[type="radio"]{
@@ -157,11 +157,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
-main > hgroup{
-  font-size: 165%;
+main>hgroup{
+  margin-top: 3vh;
 }
 
 main>section{
