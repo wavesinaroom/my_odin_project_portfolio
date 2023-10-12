@@ -118,9 +118,9 @@ hgroup{
 }
 
 img[src="./images/profile_picture_1.1.png"]{
-  max-height: 13vh;
-  max-width: 13vw;
-  border-radius: 7vw;
+  max-height: 14vh;
+  max-width: 14vh;
+  border-radius: 50%;
   border: 3px solid var(--white-100);
   margin-top: 4vh;
   margin-bottom: 4vh;
