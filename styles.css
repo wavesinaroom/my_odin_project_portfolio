@@ -16,9 +16,10 @@ aside{
   padding-left: 1em;
   padding-right: 1em;
   flex: 1;
-  min-height: 100vh;
 }
 
+article{
+}
 body{
   background-color: var(--black-200);
   color: var(--orange);
@@ -38,6 +39,7 @@ body{
 
 body>aside, body>main{
   background-color: var(--black-300);
+  height: 100vh;
 }
 button{
   all: initial;
@@ -111,6 +113,10 @@ header>section:nth-child(2){
   padding:0px;
 }
 
+hgroup{
+  text-align: center;
+}
+
 img[src="./images/profile_picture_1.png"]{
   max-height: 13vh;
   max-width: 13vw;
@@ -147,9 +153,55 @@ legend{
   padding-bottom: 0.5em;
 }
 
-main{
-  flex:2;
-  min-height: 100vh;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+main > hgroup{
+  font-size: 165%;
+}
+
+main>section{
+  display: block;
+  box-shadow: 19px 19px var(--gray-100);
+  margin: 3em;
+  padding:0;
+}
+
+main>section>h4{
+  color: var(--white-200);
+  position:relative;
+  z-index: auto; 
+  background-color: var(--black-200);
+  border-style: groove;
+  border-width: 3px;
+  border-bottom: none;
+  border-color: var(--gray-300);
+  padding-left: 2em;
+  padding-right:2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main>section>article{
+  text-align: center;
+  border-style: groove;
+  border-color: var(--gray-300);
+  border-width: 3px;
+  padding: 1em;
+  background-color: var(--black-300);
+  padding-top: 2em;
+}
+
+main>section>article>p{
+  text-align: center;
+  text-indent: 3ch;
+  margin-bottom:2em ;
 }
 
 menu{
@@ -204,7 +256,7 @@ section h3 {
 }
 
 span{
-  color:var(--white-500);
+  color:var(--white-200);
 }
 
 text {
@@ -268,21 +320,6 @@ text {
   font-size: 120%;
   margin-left: 0.5em;
   top: 150vh;
-}
-
-#profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#profile > hgroup{
-  font-size: 165%;
-}
-#profile > article >p{
-  text-align: left;
-  text-indent: 3ch;
-  margin-bottom:2em ;
 }
 
 #todo-project{
