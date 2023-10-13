@@ -90,8 +90,10 @@ h3{
 
 footer{
   background-color:var(--gray-100);
-  position: sticky;
   bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
 }
 
 footer>h2{
