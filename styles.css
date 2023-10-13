@@ -130,16 +130,15 @@ footer>p{
 }
 
 footer a:nth-of-type(1){
-  background-color: var(--gray-300);
-}
-
-footer a:nth-of-type(2){
   background-color: var(--gray-200);
 }
 
+footer a:nth-of-type(2){
+  background-color: var(--gray-300);
+}
+
 footer a:nth-of-type(3){
-  background-color: var(--gray-400);
-  color: var(--black-200);
+  background-color: var(--gray-200);
 }
 
 footer a:nth-of-type(4){
