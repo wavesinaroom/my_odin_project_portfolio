@@ -100,6 +100,15 @@ footer>h2{
   margin: 0;
 }
 
+footer>p{
+  background-color: var(--black-200);
+  margin:0;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+}
+
 header{
   background-color: var(--gray-100);
   display: flex;
