@@ -358,26 +358,36 @@ text {
 }
 
 #skills{
+  border-style: groove;
+  border-width: 3px;
+  border-color: var(--gray-300);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns:repeat(4, 1fr);
   grid-template-rows: 1fr / 3fr;
   grid-template-areas: "header header header header"
                        "menu content content content";
 }
 
 #skills>h4{
+  border-style: groove;
+  border-width: 3px;
+  border-color: var(--gray-300);
+  border-top: none;
+  border-right: none;
+  border-left:none;
   background-color: var(--black-200);
   color: var(--white-100);
   grid-area: header;
   margin: 0;
 }
 
-#skills div>h4{
-  grid-area: menu;
-}
-
-#skills div>menu>li{
-  grid-area: menu;
+#skills:nth-child(2){
+  border-style: groove;
+  border-width: 3px;
+  border-color: var(--black-300);
+  border-bottom: none;
+  border-bottom: none;
+  border-left: none;
 }
 
 #skills section{
@@ -385,21 +395,30 @@ text {
   margin:0;
 }
 
-#skills section:last-child{
-  grid-area: content;
-}
-
 #skills>section>div{
   font-size: 0.9em;
 }
 
 #skills>section>div>h4{
+  border-style: groove;
+  border-width: 3px;
+  border-color: var(--gray-300);
+  border-left: none;
   color: var(--white-100);
 }
 
+#skills>section>div>h4:first-child{
+  border-top: none; 
+}
 #skills>section>div>menu{
-  padding:0px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: var(--gray-300);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   box-shadow: none;
+  padding:0px;
 }
 
 #skills>section>div>menu>li>button{
