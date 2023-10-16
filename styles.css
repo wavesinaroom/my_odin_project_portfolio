@@ -357,53 +357,52 @@ text {
   top: 360px;
 }
 
+#skills{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr / 3fr;
+  grid-template-areas: "header header header header"
+                       "menu content content content";
+}
+
 #skills>h4{
-  color: var(--white-100);
   background-color: var(--black-200);
-  margin: 0;
-  border-style: groove;
-  border-color: var(--gray-300);
-  border-width: 3px;
-}
-
-#skills>div{
-  border-style: groove;
-  border-color: var(--gray-300);
-  border-width: 3px;
-  border-top: none;
-  border-left: none;
-}
-
-#skills>div>section{
-  border-style: groove;
-  border-color: var(--gray-300);
-  border-width: 3px;
-  border-top: none;
-  font-size: 0.9em;
-  width: 10vw;
-}
-
-#skills>div>:last-child{
-  border-bottom: none;
-}
-
-#skills>div>section>h4{
   color: var(--white-100);
-  font-size: 0.9em;
-  border-style: groove;
-  border-color: var(--gray-300);
-  border-width: 3px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  grid-area: header;
+  margin: 0;
 }
 
-#skills>div>section>menu{
+#skills div>h4{
+  grid-area: menu;
+}
+
+#skills div>menu>li{
+  grid-area: menu;
+}
+
+#skills section{
+  padding:0;
+  margin:0;
+}
+
+#skills section:last-child{
+  grid-area: content;
+}
+
+#skills>section>div{
+  font-size: 0.9em;
+}
+
+#skills>section>div>h4{
+  color: var(--white-100);
+}
+
+#skills>section>div>menu{
   padding:0px;
   box-shadow: none;
 }
 
-#skills>div>section>menu>li>button{
+#skills>section>div>menu>li>button{
   padding-right: 1em;
   padding-left: 1em;
   width: 9vw;
