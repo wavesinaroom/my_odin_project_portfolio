@@ -37,7 +37,7 @@ body{
 
 body>aside, body>main{
   background-color: var(--black-300);
-  height: 100vh;
+  scroll-snap-align: start;
 }
 button{
   all: initial;
@@ -214,7 +214,6 @@ main {
   align-items: center;
   padding-right: 1em;
   padding-left: 1em;
-  max-height: 94vh;
 }
 
 main>hgroup{
@@ -263,10 +262,6 @@ main>section>article>p{
 
 menu{
   box-shadow: 3px 3px 1px var(--gray-100);
-  display: none;
-  position:absolute;
-  left: 0;
-  z-index: 1;
   padding-left:5px ;
   margin-top: 0;
   margin-bottom: 0;
@@ -284,6 +279,13 @@ menu>li>button{
 menu>li>button:hover{
   background-color: var(--orange);
   color:black;
+}
+
+#dropdown-menu>menu{
+  display: none;
+  position:absolute;
+  left: 0;
+  z-index: 1;
 }
 
 p{
