@@ -12,12 +12,6 @@
   --orange: #ff9921;
 }
 
-aside{
-  padding-left: 1em;
-  padding-right: 1em;
-  flex: 1;
-}
-
 body{
   background-color: var(--black-200);
   color: var(--orange);
@@ -39,6 +33,7 @@ body>aside, body>main{
   background-color: var(--black-300);
   scroll-snap-align: start;
 }
+
 button{
   all: initial;
   background-color: var(--gray-200);
@@ -48,15 +43,6 @@ button{
   padding-bottom: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
-}
-details{
-  max-width: 13vw;
-}
-
-details > summary{
-  list-style: none;
-  font-size: 110%;
-  margin-bottom: 0.5em;
 }
 
 dialog{
@@ -120,7 +106,7 @@ footer>h2{
   margin: 0;
 }
 
-footer>p{
+footer>p,#skills h4{
   background-color: var(--black-200);
   margin:0;
   padding-bottom: 0.5em;
@@ -155,7 +141,7 @@ header{
   top: 0px;
 }
 
-header>section:first-child{
+header>section:first-child, #skills>div>section{
   display: block;
   position:relative;
   margin-bottom: 0px;
@@ -281,14 +267,7 @@ menu>li>button:hover{
   color:black;
 }
 
-#dropdown-menu>menu{
-  display: none;
-  position:absolute;
-  left: 0;
-  z-index: 1;
-}
-
-p{
+p {
   color: var(--white-100);
 }
 
@@ -327,25 +306,6 @@ text {
   z-index: 1;
 }
 
-.programming-icons{
-  margin-left: 2em;
-}
-
-.programming-icons img{
-  margin: 0.5em;
-}
-
-.qualification {
-  display: flex;
-  align-items: center;
-}
-
-.qualification svg{
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-
 .expandable-interactive{
   display: flex;
   margin-bottom: 1em;
@@ -360,25 +320,11 @@ text {
   margin-right: 1em;
   margin-bottom: 1em;
 }
-
-.software h3{
-  margin-left: 1em;
-}
-
-.tech-icons{
-  display: flex;
-  flex-direction: column;
-  margin-left: 2em;
-}
-
-.tech-icons img{
-  margin: 0.5em;
-}
-
-#bottom-banner{
-  font-size: 120%;
-  margin-left: 0.5em;
-  top: 150vh;
+#dropdown-menu>menu{
+  display: none;
+  position:absolute;
+  left: 0;
+  z-index: 1;
 }
 
 #todo-project{
@@ -411,14 +357,55 @@ text {
   top: 360px;
 }
 
-#work-experience{
-  min-height: 25vh;
+#skills>h4{
+  color: var(--white-100);
+  background-color: var(--black-200);
+  margin: 0;
+  border-style: groove;
+  border-color: var(--gray-300);
+  border-width: 3px;
 }
 
-#soft-skills{
-  min-height: 15vh;
+#skills>div{
+  border-style: groove;
+  border-color: var(--gray-300);
+  border-width: 3px;
+  border-top: none;
+  border-left: none;
 }
 
-#soft-skills > details{
-  margin-left: 1em;
+#skills>div>section{
+  border-style: groove;
+  border-color: var(--gray-300);
+  border-width: 3px;
+  border-top: none;
+  font-size: 0.9em;
+  width: 10vw;
 }
+
+#skills>div>:last-child{
+  border-bottom: none;
+}
+
+#skills>div>section>h4{
+  color: var(--white-100);
+  font-size: 0.9em;
+  border-style: groove;
+  border-color: var(--gray-300);
+  border-width: 3px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+#skills>div>section>menu{
+  padding:0px;
+  box-shadow: none;
+}
+
+#skills>div>section>menu>li>button{
+  padding-right: 1em;
+  padding-left: 1em;
+  width: 9vw;
+}
+
