@@ -1,9 +1,8 @@
 const projectInteractives = Array.from(document.getElementsByClassName(`project-interactive`));
 const dialogs = Array.from(document.getElementsByTagName(`dialog`));
-const details = Array.from(document.getElementsByTagName(`details`));
-const panels = Array.from(document.getElementsByClassName(`panel`));
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
+const skillsButtons = Array.from(document.getElementsByClassName(`skill-button`));
 
 projectInteractives.forEach((interactive)=>{
   interactive.children[0].addEventListener(`mouseenter`, ()=>{
@@ -29,16 +28,6 @@ dialogs.forEach((d)=>{
   });
 });
 
-details.forEach((interactive)=>{
-  interactive.addEventListener(`mouseenter`, ()=>{
-    interactive.open = true;
-  });
-
-  interactive.addEventListener(`mouseleave`, ()=>{
-    interactive.open = false;
-  });
-});
-
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.style.backgroundColor = `var(--black-200)`;
   document.querySelector(`#dropdown-menu>menu`).style.display = `block`;
@@ -50,8 +39,17 @@ document.addEventListener(`click`, (e)=>{
     document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
   }
 })
+
 navButtons.forEach((button)=>{
   button.addEventListener(`click`, ()=>{
     document.getElementById(button.dataset.panel).scrollIntoView({behavior:`smooth`});
+  })
+})
+
+skillsButtons.forEach((button)=>{
+  button.addEventListener(`click`, ()=>{
+    button.style.backgroundColor = `var(--orange)`;
+    button.style.color = `var(--black-200)`;
+    document.getElementById(button.dataset.skill).style.display = `block`;
   })
 })

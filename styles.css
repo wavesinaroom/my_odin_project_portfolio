@@ -366,11 +366,23 @@ text {
 
 #skills>section:nth-of-type(1){
   grid-area: menu;
+  border-style: groove;
+  border-width: 3px;
+  border-color: var(--gray-300);
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
 }
 
 #skills>section:nth-of-type(2){
   grid-area: content;
   background-color:var(--black-300);
+  overflow-y: scroll;
+  height: 40vh;
+}
+
+#skills>section:nth-of-type(2)>article{
+  display: none;
 }
 
 #skills>h4{
@@ -402,23 +414,27 @@ text {
   border-width: 3px;
   border-color: var(--gray-300);
   border-left: none;
+  border-right: none;
   color: var(--white-100);
 }
 
 #skills>section>div>h4:first-child{
   border-top: none; 
 }
+
 #skills>section>div>menu{
-  border-style: groove;
-  border-width: 3px;
-  border-color: var(--gray-300);
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
   box-shadow: none;
   padding:0px;
 }
 
+#skills>section>div>menu:last-of-type{
+  border-style:groove;
+  border-width: 3px;
+  border-color: var(--gray-300);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
 #skills>section>div>menu>li>button{
   padding-right: 1em;
   padding-left: 1em;
