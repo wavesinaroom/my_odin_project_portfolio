@@ -321,6 +321,32 @@ text {
   margin-right: 1em;
   margin-bottom: 1em;
 }
+
+.floating-dl>dd{
+  background-color: var(--black-300);
+  border: 1px solid var(--white-300);
+  box-shadow: 10px 10px var(--gray-100);
+  margin-bottom: 4em;
+  margin-left: 0;
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.floating-dl>dt{
+  background-color: var(--orange-100);
+  border: 1px solid var(--white-300);
+  border-bottom: none;
+  box-shadow: 10px 10px var(--gray-100);
+  color: var(--black-200);
+  max-width: 20em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 #dropdown-menu>menu{
   display: none;
   position:absolute;
@@ -389,6 +415,8 @@ text {
 
 #skills>section:nth-of-type(2)>article{
   display: none;
+  margin: 2em;
+  color: var(--white-200);
 }
 
 #skills>h4{
