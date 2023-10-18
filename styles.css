@@ -322,25 +322,26 @@ text {
   margin-bottom: 1em;
 }
 
-.floating-dl>dd{
+#skills dd{
   background-color: var(--black-300);
   border: 1px solid var(--white-300);
   box-shadow: 10px 10px var(--gray-100);
   margin-bottom: 4em;
   margin-left: 0;
+  max-width: 25em;
   padding-left: 2em;
   padding-right: 1em;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-.floating-dl>dt{
+#skills dt{
   background-color: var(--orange-100);
   border: 1px solid var(--white-300);
   border-bottom: none;
   box-shadow: 10px 10px var(--gray-100);
   color: var(--black-200);
-  max-width: 20em;
+  display: block;
   padding-right: 1em;
   padding-left: 1em;
   padding-top: 0.5em;
