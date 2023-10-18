@@ -296,6 +296,11 @@ text {
   font-weight: bolder;
 }
 
+.clicked{
+  background-color: var(--orange);
+  color: var(--black-100);
+}
+
 .circle {
   position: relative;
   z-index: 1;

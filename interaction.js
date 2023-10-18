@@ -3,6 +3,7 @@ const dialogs = Array.from(document.getElementsByTagName(`dialog`));
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
 const skillsButtons = Array.from(document.getElementsByClassName(`skill-button`));
+const skillsArticles = Array.from(document.querySelectorAll(`#skills>section:nth-of-type(2)>article`));
 
 projectInteractives.forEach((interactive)=>{
   interactive.children[0].addEventListener(`mouseenter`, ()=>{
@@ -46,10 +47,16 @@ navButtons.forEach((button)=>{
   })
 })
 
-skillsButtons.forEach((button)=>{
-  button.addEventListener(`click`, ()=>{
-    button.style.backgroundColor = `var(--orange)`;
-    button.style.color = `var(--black-200)`;
-    document.getElementById(button.dataset.skill).style.display = `block`;
+skillsButtons.forEach((skill)=>{
+  skill.addEventListener(`click`, ()=>{
+    for(const button of skillsButtons){
+      if(skill.dataset.skill === button.dataset.skill){
+        button.classList.add(`clicked`);
+        document.getElementById(button.dataset.skill).style.display = `block`;
+      }else{
+        button.classList.remove(`clicked`);
+        document.getElementById(button.dataset.skill).style.display = `none`;
+      }
+    }
   })
 })
