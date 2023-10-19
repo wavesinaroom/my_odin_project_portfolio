@@ -39,6 +39,15 @@ document.addEventListener(`click`, (e)=>{
     dropDownMenuButton.style.backgroundColor = `var(--gray-200)`;
     document.querySelector(`#dropdown-menu>menu`).style.display = `none`;
   }
+
+  if(!e.target.closest(`#skills>section`)&&!e.target.closest(`#skills>h4`)){
+    const selectedSkillButton = document.querySelector(`.clicked`)
+    if(selectedSkillButton){
+      selectedSkillButton.classList.remove(`clicked`);
+      document.getElementById(selectedSkillButton.dataset.skill).style.display = `none`;
+    }
+  }
+
 })
 
 navButtons.forEach((button)=>{
