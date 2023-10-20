@@ -309,8 +309,8 @@ text {
   color: var(--white-100);
   grid-area: header;
   margin: 0;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
   padding-top: 0.5em;
   padding-bottom:0.5em;
 }
