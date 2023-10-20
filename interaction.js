@@ -48,7 +48,7 @@ skillsButtons.forEach((skill)=>{
 projectPanels.forEach((panel)=>{
   panel.addEventListener('mouseenter', ()=>{
     panel.style.opacity = `1`;
-    panel.style.boxShadow = `8px 8px var(--gray-200)`;
+    panel.style.boxShadow = `8px 8px var(--gray-100)`;
     panel.children[0].style.backgroundColor = `var(--orange-100)`;
     panel.children[0].style.color = 'var(--black-200)';
   })
