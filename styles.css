@@ -321,11 +321,37 @@ text {
   border-top: none;
   border-right: none;
   border-left: none;
+  color: var(--white-100);
   margin: 0;
   padding-right: 1em;
   padding-left: 1em;
   padding-top: 0.5em;
   padding-bottom:0.5em;
+}
+
+#projects>section{
+  margin: 3em;
+  border: 3px groove var(--gray-300);
+  padding: 0;
+}
+
+#projects>section>h4{
+  color: var(--white-100);
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 3px groove var(--gray-300);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+#projects>section>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #skills{
