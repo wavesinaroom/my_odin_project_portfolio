@@ -306,36 +306,39 @@ text {
 }
 
 #projects{
+  background-color: var(--black-300);
+  border: 3px groove var(--gray-300);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "header header header header"
                        "one one two two"
                        "three three four four";
-  border: 3px groove var(--gray-300);
 }
 
 #projects>h4{
-  grid-area: header;
+  background-color: var(--black-200);
   border: 3px groove var(--gray-300);
   border-top: none;
   border-right: none;
   border-left: none;
   color: var(--white-100);
+  grid-area: header;
   margin: 0;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
   padding-top: 0.5em;
   padding-bottom:0.5em;
 }
 
 #projects>section{
-  margin: 3em;
   border: 3px groove var(--gray-300);
+  margin: 3em;
   padding: 0;
 }
 
 #projects>section>h4{
+  background-color: var(--black-200);
   color: var(--white-100);
   margin: 0;
   padding-top: 0.5em;
