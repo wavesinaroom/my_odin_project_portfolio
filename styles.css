@@ -317,6 +317,7 @@ text {
 
 #projects>section{
   border: 3px groove var(--gray-300);
+  opacity: 0.5;
   margin: 2em;
   padding: 0;
 }

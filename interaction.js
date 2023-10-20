@@ -1,33 +1,8 @@
-const projectInteractives = Array.from(document.getElementsByClassName(`project-interactive`));
-const dialogs = Array.from(document.getElementsByTagName(`dialog`));
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
 const skillsButtons = Array.from(document.getElementsByClassName(`skill-button`));
 const skillsArticles = Array.from(document.querySelectorAll(`#skills>section:nth-of-type(2)>article`));
-
-projectInteractives.forEach((interactive)=>{
-  interactive.children[0].addEventListener(`mouseenter`, ()=>{
-    const dialog = interactive.children[1];
-    dialog.open = true;
-  });
-
-  interactive.children[0].addEventListener(`mouseleave`, ()=>{
-    dialogs.forEach((d)=>{
-      d.open = false;
-    });
-  });
-});
-
-dialogs.forEach((d)=>{
-  d.addEventListener(`mouseenter`, ()=>{
-    d.open = true;
-    d.scrollIntoView({behavior: "smooth"});
-  });
-  
-  d.addEventListener(`mouseleave`, ()=>{
-    d.open = false;
-  });
-});
+const projectPanels = Array.from(document.querySelectorAll(`#projects>section`));
 
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.style.backgroundColor = `var(--black-200)`;
@@ -67,5 +42,23 @@ skillsButtons.forEach((skill)=>{
         document.getElementById(button.dataset.skill).style.display = `none`;
       }
     }
+  })
+})
+
+projectPanels.forEach((panel)=>{
+  panel.addEventListener('mouseenter', ()=>{
+    panel.style.opacity = `1`;
+    panel.style.boxShadow = `8px 8px var(--gray-200)`;
+    panel.children[0].style.backgroundColor = `var(--orange-100)`;
+    panel.children[0].style.color = 'var(--black-200)';
+  })
+})
+
+projectPanels.forEach((panel)=>{
+  panel.addEventListener(`mouseleave`, ()=>{
+    panel.style.opacity = `0.5`;
+    panel.children[0].style.backgroundColor = `var(--black-200)`;
+    panel.style.boxShadow = `none`;
+    panel.children[0].style.color = `var(--white-100)`;
   })
 })
