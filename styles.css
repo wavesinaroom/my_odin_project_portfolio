@@ -312,11 +312,22 @@ text {
   grid-template-areas: "header header header header"
                        "one one two two"
                        "three three four four";
+  border: 3px groove var(--gray-300);
 }
 
 #projects>h4{
   grid-area: header;
+  border: 3px groove var(--gray-300);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 0;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom:0.5em;
 }
+
 #skills{
   border-style: groove;
   border-width: 3px;
