@@ -297,31 +297,6 @@ text {
   font-weight: bolder;
 }
 
-.clicked{
-  background-color: var(--orange-100);
-  color: var(--black-100);
-}
-
-.circle {
-  position: relative;
-  z-index: 1;
-}
-
-.expandable-interactive{
-  display: flex;
-  margin-bottom: 1em;
-}
-
-.experience-interactive p{
-  color: #efefef;
-}
-
-.expandable-interactive svg{
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-
 
 #dropdown-menu>menu{
   display: none;
@@ -330,36 +305,18 @@ text {
   z-index: 1;
 }
 
-#todo-project{
-  position: relative;
-  left: 600px;
-  top: 45px;
+#projects{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header"
+                       "one one two two"
+                       "three three four four";
 }
 
-#weather-project{
-  position: relative;
-  left: 375px;
-  top: 75px;
+#projects>h4{
+  grid-area: header;
 }
-
-#shop-project{
-  position: relative;
-  left: 240px;
-  top: 140px;
-}
-
-#point-project{
-  position: relative;
-  left:150px;
-  top: 225px;
-}
-
-#synth-project{
-  position: relative;
-  left: 105px;
-  top: 360px;
-}
-
 #skills{
   border-style: groove;
   border-width: 3px;
