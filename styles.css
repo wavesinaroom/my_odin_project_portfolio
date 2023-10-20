@@ -321,6 +321,10 @@ text {
   padding: 0;
 }
 
+#projects>section>p{
+  padding: 1em;
+}
+
 #projects>section>h4{
   background-color: var(--black-200);
   color: var(--white-100);
