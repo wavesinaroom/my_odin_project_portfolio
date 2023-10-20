@@ -196,6 +196,7 @@ main {
   align-items: center;
   padding-right: 1em;
   padding-left: 1em;
+  height: 100vh;
 }
 
 main>hgroup{
@@ -279,6 +280,10 @@ text {
   font-weight: bolder;
 }
 
+.clicked{
+  background-color: var(--orange-100);
+  color: var(--black-200);
+}
 
 #dropdown-menu>menu{
   display: none;
@@ -298,6 +303,8 @@ text {
                        "one one two two"
                        "three three four four";
   margin: 3em;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
 }
 
 #projects>h4{
@@ -310,7 +317,7 @@ text {
   grid-area: header;
   margin: 0;
   padding-right: 2em;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-top: 0.5em;
   padding-bottom:0.5em;
 }
@@ -395,6 +402,8 @@ text {
   grid-template-areas: "header header header header"
                        "menu content content content";
   margin: 3em;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
   box-shadow: 19px 19px var(--gray-100);
 }
   

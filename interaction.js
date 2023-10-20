@@ -27,7 +27,7 @@ document.addEventListener(`click`, (e)=>{
 
 navButtons.forEach((button)=>{
   button.addEventListener(`click`, ()=>{
-    document.getElementById(button.dataset.panel).scrollIntoView({behavior:`smooth`});
+    document.getElementById(button.dataset.panel).scrollIntoView({behavior:`smooth`, block: `center`});
   })
 })
 
