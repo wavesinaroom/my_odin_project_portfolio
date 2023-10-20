@@ -270,24 +270,6 @@ p {
 input[type="radio"]{
   background-color: var(--gray-300); 
 }
-section{
-  margin-bottom: 2vh;
-  padding: 0.3em;
-}
-
-section h2{
-  margin-bottom: 1em;
-}
-
-section p {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-}
-
-section h3 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
 
 span{
   color:var(--white-200);
@@ -308,12 +290,14 @@ text {
 #projects{
   background-color: var(--black-300);
   border: 3px groove var(--gray-300);
+  box-shadow: 19px 19px 1px var(--gray-100);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "header header header header"
                        "one one two two"
                        "three three four four";
+  margin: 3em;
 }
 
 #projects>h4{
@@ -325,8 +309,8 @@ text {
   color: var(--white-100);
   grid-area: header;
   margin: 0;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
   padding-top: 0.5em;
   padding-bottom:0.5em;
 }
@@ -356,6 +340,7 @@ text {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--gray-100);
 }
 
 #projects>section>div>p, a{
@@ -364,6 +349,10 @@ text {
   padding-bottom: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+#projects>section>div>p{
+  background-color: var(--black-200);
 }
 
 #skills{
