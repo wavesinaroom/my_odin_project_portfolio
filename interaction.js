@@ -55,9 +55,9 @@ document.addEventListener(`click`, (e)=>{
   }
 
   if(!e.target.closest(`#skills>section`)&&!e.target.closest(`#skills>h4`)){
-    const selectedSkillButton = document.querySelector(`.clicked`)
+    const selectedSkillButton = document.querySelector(`.selected`)
     if(selectedSkillButton){
-      selectedSkillButton.classList.remove(`clicked`);
+      selectedSkillButton.classList.remove(`selected`);
       document.getElementById(selectedSkillButton.dataset.skill).style.display = `none`;
     }
   }
