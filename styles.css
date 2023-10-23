@@ -83,6 +83,7 @@ footer>div>a{
 }
 
 footer>div>a:hover{
+  transition: all 0.4s ease;
   background-color: var(--orange-200);
   color: var(--black-100);
 }
@@ -140,6 +141,7 @@ header>section:nth-child(2){
 }
 
 header>section:nth-of-type(1)>button:hover{
+  transition: all 0.2s ease;
   background-color: var(--orange-200);
   color: var(--black-200);
 }
@@ -171,6 +173,7 @@ input[type="radio"]+label{
 }
 
 input[type="radio"]+label:hover{
+  transition: all 0.2s ease;
   background-color: var(--orange-200);
   color: var(--black-200);
 }
@@ -254,6 +257,7 @@ menu>li>button{
 }
 
 menu>li>button:hover{
+  transition: all 0.2s ease;
   background-color: var(--orange-200);
   color: var(--black-100);
 }
@@ -391,6 +395,7 @@ text {
 }
 
 #projects>section>div>div>a:hover{
+  transition: all 0.3s ease;
   background-color: var(--orange-200);
   color: var(--black-200);
 }
