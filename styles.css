@@ -41,17 +41,6 @@ button{
   padding-right: 1em;
 }
 
-dialog{
-  position:absolute;
-  z-index: 2; 
-  margin-left: 0px;
-  max-width: 15vw;
-  left: 0.6em;
-  top: 0.6em;
-  background-color: var(--black-200);
-  color: var(--orange-100);
-}
-
 fieldset{
   all: initial;
   display: inline-flex;
@@ -296,6 +285,9 @@ text {
 }
 
 .window{
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
   border: 3px groove var(--gray-300);
   opacity: 0.5;
   margin: 2em;
