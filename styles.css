@@ -332,7 +332,7 @@ text {
   padding-bottom:0.5em;
 }
 
-#projects>section{
+.window{
   border: 3px groove var(--gray-300);
   opacity: 0.5;
   margin: 2em;
@@ -419,7 +419,7 @@ text {
   
 #skills>section:nth-of-type(2) dd{
   background-color: var(--black-300);
-  border: 1px solid var(--white-300);
+  border: 3px solid var(--gray-300);
   box-shadow: 8px 8px var(--gray-200);
   margin-bottom: 5em;
   margin-left: 0;
@@ -432,14 +432,11 @@ text {
 
 #skills>section:nth-of-type(2) dt{
   background-color: var(--orange-100);
-  border: 1px solid var(--white-300);
+  border: 3px solid var(--gray-300);
   border-bottom: none;
   color: var(--black-200);
-  display: inline-block;
   padding-right: 1em;
   padding-left: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 #skills>section:nth-of-type(1){

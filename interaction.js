@@ -2,7 +2,7 @@ const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
 const skillsButtons = Array.from(document.getElementsByClassName(`skill-button`));
 const skillsArticles = Array.from(document.querySelectorAll(`#skills>section:nth-of-type(2)>article`));
-const projectPanels = Array.from(document.querySelectorAll(`#projects>section`));
+const windows = Array.from(document.querySelectorAll(`.window`));
 
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.classList.add(`active`);
@@ -30,8 +30,9 @@ skillsButtons.forEach((skill)=>{
   })
 })
 
-projectPanels.forEach((panel)=>{
+windows.forEach((panel)=>{
   panel.addEventListener('mouseenter', ()=>{
+    console.log(`in`)
     panel.style.opacity = `1`;
     panel.style.boxShadow = `8px 8px var(--gray-100)`;
     panel.children[0].style.backgroundColor = `var(--orange-100)`;
@@ -39,8 +40,9 @@ projectPanels.forEach((panel)=>{
   })
 })
 
-projectPanels.forEach((panel)=>{
+windows.forEach((panel)=>{
   panel.addEventListener(`mouseleave`, ()=>{
+    console.log(`out`)
     panel.style.opacity = `0.5`;
     panel.children[0].style.backgroundColor = `var(--black-200)`;
     panel.style.boxShadow = `none`;
