@@ -295,6 +295,13 @@ text {
   color: var(--black-200);
 }
 
+.window{
+  border: 3px groove var(--gray-300);
+  opacity: 0.5;
+  margin: 2em;
+  padding: 0;
+}
+
 #dropdown-menu>menu{
   display: none;
   position:absolute;
@@ -330,13 +337,6 @@ text {
   padding-left: 1em;
   padding-top: 0.5em;
   padding-bottom:0.5em;
-}
-
-.window{
-  border: 3px groove var(--gray-300);
-  opacity: 0.5;
-  margin: 2em;
-  padding: 0;
 }
 
 #projects>section>p{
@@ -419,24 +419,24 @@ text {
   
 #skills>section:nth-of-type(2) dd{
   background-color: var(--black-300);
-  border: 3px solid var(--gray-300);
-  box-shadow: 8px 8px var(--gray-200);
-  margin-bottom: 5em;
   margin-left: 0;
-  max-width: 25em;
   padding-left: 2em;
   padding-right: 1em;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 2em;
 }
 
 #skills>section:nth-of-type(2) dt{
-  background-color: var(--orange-100);
+  background-color: var(--black-200);
   border: 3px solid var(--gray-300);
-  border-bottom: none;
-  color: var(--black-200);
-  padding-right: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: var(--white-200);
   padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #skills>section:nth-of-type(1){

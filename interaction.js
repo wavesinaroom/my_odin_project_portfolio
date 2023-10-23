@@ -32,7 +32,6 @@ skillsButtons.forEach((skill)=>{
 
 windows.forEach((panel)=>{
   panel.addEventListener('mouseenter', ()=>{
-    console.log(`in`)
     panel.style.opacity = `1`;
     panel.style.boxShadow = `8px 8px var(--gray-100)`;
     panel.children[0].style.backgroundColor = `var(--orange-100)`;
@@ -42,7 +41,6 @@ windows.forEach((panel)=>{
 
 windows.forEach((panel)=>{
   panel.addEventListener(`mouseleave`, ()=>{
-    console.log(`out`)
     panel.style.opacity = `0.5`;
     panel.children[0].style.backgroundColor = `var(--black-200)`;
     panel.style.boxShadow = `none`;
