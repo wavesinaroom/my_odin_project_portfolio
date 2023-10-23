@@ -223,8 +223,6 @@ main>section{
 
 main>section>h4{
   color: var(--white-200);
-  position:relative;
-  z-index: auto; 
   background-color: var(--black-200);
   border-style: groove;
   border-width: 3px;
