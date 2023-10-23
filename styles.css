@@ -237,19 +237,15 @@ main>section>h4{
 }
 
 main>section>article{
-  text-align: center;
   border-style: groove;
   border-color: var(--gray-300);
   border-width: 3px;
-  padding: 1em;
+  padding: 2em;
   background-color: var(--black-300);
-  padding-top: 2em;
 }
 
-main>section>article>p{
-  text-align: center;
-  text-indent: 3ch;
-  margin-bottom:2em ;
+main>section>p{
+  margin-top: 2em;
 }
 
 menu{
