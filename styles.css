@@ -150,6 +150,11 @@ header>section:nth-child(2){
   padding:0px;
 }
 
+header>section:nth-of-type(1)>button:hover{
+  background-color: var(--orange-200);
+  color: var(--black-200);
+}
+
 hgroup{
   text-align: center;
 }
@@ -286,7 +291,12 @@ text {
   font-weight: bolder;
 }
 
-.clicked{
+.active{
+  background-color: var(--black-200);
+  color: var(--white-200);
+}
+
+.selected{
   background-color: var(--orange-100);
   color: var(--black-200);
 }
