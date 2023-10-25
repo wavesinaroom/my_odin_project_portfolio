@@ -1,8 +1,11 @@
+let audioCtxt;
+
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
 const skillsButtons = Array.from(document.getElementsByClassName(`skill-button`));
 const skillsArticles = Array.from(document.querySelectorAll(`#skills>section:nth-of-type(2)>article`));
 const windows = Array.from(document.querySelectorAll(`.window`));
+const toggles = Array.from(document.querySelectorAll(`input[type="radio"]`));
 
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.classList.add(`active`);
@@ -61,4 +64,12 @@ document.addEventListener(`click`, (e)=>{
       document.getElementById(selectedSkillButton.dataset.skill).style.display = `none`;
     }
   }
+})
+
+toggles.forEach((toggle)=>{
+  toggle.addEventListener(`click`, (e)=>{
+    if(e.target.value === `on` && e.target.checked)
+      audioCtxt = new AudioContext();
+    audioCtxt = null;
+  })
 })
