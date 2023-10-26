@@ -1,4 +1,4 @@
-let audioCtxt;
+const audioCtxt = new AudioContext();
 
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
@@ -69,7 +69,8 @@ document.addEventListener(`click`, (e)=>{
 toggles.forEach((toggle)=>{
   toggle.addEventListener(`click`, (e)=>{
     if(e.target.value === `on` && e.target.checked)
-      audioCtxt = new AudioContext();
-    audioCtxt = null;
+      audioCtxt.resume()
+    else
+      audioCtxt.suspend() 
   })
 })
