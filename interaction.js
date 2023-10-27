@@ -1,3 +1,4 @@
+let buffer;
 const audioCtxt = new AudioContext();
 
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
@@ -10,14 +11,14 @@ const toggles = Array.from(document.querySelectorAll(`input[type="radio"]`));
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.classList.add(`active`);
   document.querySelector(`#dropdown-menu>menu`).style.display = `block`;
-})
+});
 
 
 navButtons.forEach((button)=>{
   button.addEventListener(`click`, ()=>{
     document.getElementById(button.dataset.panel).scrollIntoView({behavior:`smooth`, block: `center`});
-  })
-})
+  });
+});
 
 skillsButtons.forEach((skill)=>{
   skill.addEventListener(`click`, ()=>{
@@ -30,8 +31,8 @@ skillsButtons.forEach((skill)=>{
         document.getElementById(button.dataset.skill).style.display = `none`;
       }
     }
-  })
-})
+  });
+});
 
 windows.forEach((panel)=>{
   panel.addEventListener('mouseenter', ()=>{
@@ -39,8 +40,8 @@ windows.forEach((panel)=>{
     panel.style.boxShadow = `8px 8px var(--gray-100)`;
     panel.children[0].style.backgroundColor = `var(--orange-100)`;
     panel.children[0].style.color = 'var(--black-200)';
-  })
-})
+  });
+});
 
 windows.forEach((panel)=>{
   panel.addEventListener(`mouseleave`, ()=>{
@@ -48,8 +49,8 @@ windows.forEach((panel)=>{
     panel.children[0].style.backgroundColor = `var(--black-200)`;
     panel.style.boxShadow = `none`;
     panel.children[0].style.color = `var(--white-100)`;
-  })
-})
+  });
+});
 
 document.addEventListener(`click`, (e)=>{
   if(!e.target.closest(`#dropdown-menu>button`)){
@@ -64,13 +65,30 @@ document.addEventListener(`click`, (e)=>{
       document.getElementById(selectedSkillButton.dataset.skill).style.display = `none`;
     }
   }
-})
+});
 
 toggles.forEach((toggle)=>{
   toggle.addEventListener(`click`, (e)=>{
     if(e.target.value === `on` && e.target.checked)
-      audioCtxt.resume()
+      audioCtxt.resume();
     else
-      audioCtxt.suspend() 
-  })
+      audioCtxt.suspend(); 
+  });
+});
+
+async function getFile(filepath){
+  const response = await fetch(filepath);
+  const arrayBuffer = await response.arrayBuffer();
+  const audioBuffer = await audioCtxt.decodeAudioData(arrayBuffer);
+  return audioBuffer;
+}
+
+function playSample(audioBuffer){
+  const source = new AudioBufferSourceNode(audioCtxt, {buffer: audioBuffer, playbackRate: audioCtxt.sampleRate});
+  source.connect(audioCtxt.destination)
+  source.start()
+}
+
+getFile(`./audio/placeholder.ogg`).then((sample)=>{
+  playSample(sample);
 })
