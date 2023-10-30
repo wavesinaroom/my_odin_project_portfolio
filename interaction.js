@@ -10,11 +10,14 @@ const skillsArticles = Array.from(document.querySelectorAll(`#skills>section:nth
 const windows = Array.from(document.querySelectorAll(`.window`));
 const toggles = Array.from(document.querySelectorAll(`input[type="radio"]`));
 
+windows.forEach((w)=>{
+  w.children[1].style.color = `transparent`;
+})
+
 dropDownMenuButton.addEventListener(`click`, ()=>{
   dropDownMenuButton.classList.add(`active`);
   document.querySelector(`#dropdown-menu>menu`).style.display = `block`;
 });
-
 
 navButtons.forEach((button)=>{
   button.addEventListener(`click`, ()=>{
@@ -36,21 +39,23 @@ skillsButtons.forEach((skill)=>{
   });
 });
 
-windows.forEach((panel)=>{
-  panel.addEventListener('mouseenter', ()=>{
-    panel.style.opacity = `1`;
-    panel.style.boxShadow = `8px 8px var(--gray-100)`;
-    panel.children[0].style.backgroundColor = `var(--orange-100)`;
-    panel.children[0].style.color = 'var(--black-200)';
+windows.forEach((w)=>{
+  w.addEventListener('mouseenter', ()=>{
+    w.style.opacity = `1`;
+    w.style.boxShadow = `8px 8px var(--gray-100)`;
+    w.children[0].style.backgroundColor = `var(--orange-100)`;
+    w.children[0].style.color = `var(--black-200)`;
+    w.children[1].style.color = `var(--white-100)`;
   });
 });
 
-windows.forEach((panel)=>{
-  panel.addEventListener(`mouseleave`, ()=>{
-    panel.style.opacity = `0.5`;
-    panel.children[0].style.backgroundColor = `var(--black-200)`;
-    panel.style.boxShadow = `none`;
-    panel.children[0].style.color = `var(--white-100)`;
+windows.forEach((w)=>{
+  w.addEventListener(`mouseleave`, ()=>{
+    w.style.opacity = `0.5`;
+    w.children[0].style.backgroundColor = `var(--black-200)`;
+    w.style.boxShadow = `none`;
+    w.children[0].style.color = `var(--white-100)`;
+    w.children[1].style.color = `transparent`;
   });
 });
 
