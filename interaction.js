@@ -1,5 +1,7 @@
+/*
 let buffer;
 const audioCtxt = new AudioContext();
+*/
 
 const navButtons = Array.from(document.getElementsByClassName(`panel-button`));
 const dropDownMenuButton = document.querySelector(`#dropdown-menu>button`);
@@ -66,7 +68,7 @@ document.addEventListener(`click`, (e)=>{
     }
   }
 });
-
+/*
 toggles.forEach((toggle)=>{
   toggle.addEventListener(`click`, (e)=>{
     if(e.target.value === `on` && e.target.checked)
@@ -89,7 +91,8 @@ function playSample(audioBuffer){
   source.start()
 }
 
-getFile(`./placeholder.ogg`).then((sample)=>{
-  console.log(`lkajsdf`)
-  playSample(sample);
+getFile(`./placeholder.wav`).then((buffer)=>{
+  console.log(`in`)
+  playSample(buffer) 
 })
+*/
