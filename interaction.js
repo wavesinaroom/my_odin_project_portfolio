@@ -89,6 +89,7 @@ function playSample(audioBuffer){
   source.start()
 }
 
-getFile(`./audio/placeholder.ogg`).then((sample)=>{
+getFile(`./placeholder.ogg`).then((sample)=>{
+  console.log(`lkajsdf`)
   playSample(sample);
 })
