@@ -32,7 +32,7 @@ body{
 
 button{
   all: initial;
-  background-color: var(--gray-200);
+  background-color: var(--gray-300);
   color: var(--white-100);
   font: inherit;
   padding-top: 0.5em;
