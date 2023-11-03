@@ -199,7 +199,8 @@ main {
   align-items: center;
   padding-right: 1em;
   padding-left: 1em;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 25vh;
 }
 
 main>hgroup{
@@ -316,7 +317,7 @@ text {
                        "one one two two"
                        "three three four four";
   margin: 3em;
-  margin-top: 30vh;
+  margin-top: 0;
   margin-bottom: 30vh;
 }
 
@@ -409,7 +410,7 @@ text {
   grid-template-areas: "header header header header"
                        "menu content content content";
   margin: 3em;
-  margin-top: 25vh;
+  margin-top: 0;
   margin-bottom: 25vh;
   box-shadow: 19px 19px var(--gray-100);
 }
