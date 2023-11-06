@@ -237,10 +237,9 @@ main>section>article{
   background-color: var(--black-300);
 }
 
-main>section>p{
-  margin-top: 2em;
+main>section>article>p:first-child{
+  margin-top: 0;
 }
-
 menu{
   box-shadow: 3px 3px 1px var(--gray-100);
   padding-left:0px ;
