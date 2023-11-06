@@ -311,11 +311,7 @@ text {
   border: 3px groove var(--gray-300);
   box-shadow: 19px 19px 1px var(--gray-100);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "header header header header"
-                       "one one two two"
-                       "three three four four";
+  grid-auto-flow: row;
   margin: 3em;
   margin-top: 0;
   margin-bottom: 30vh;
@@ -328,7 +324,6 @@ text {
   border-right: none;
   border-left: none;
   color: var(--white-100);
-  grid-area: header;
   margin: 0;
   padding-right: 2em;
   padding-left: 1em;
@@ -336,11 +331,21 @@ text {
   padding-bottom:0.5em;
 }
 
-#projects>section>p{
-  padding: 1em;
+#projects>div{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#projects>section>h4{
+#projects>div>section{
+  margin: 1em;
+}
+
+#projects>div>section>p{
+  padding: 1em;
+  max-width: 30em;
+}
+
+#projects>div>section>h4{
   background-color: var(--black-200);
   color: var(--white-100);
   margin: 0;
@@ -354,7 +359,7 @@ text {
   border-left: none;
 }
 
-#projects>section>div{
+#projects>div>section>div{
   align-items: center;
   background-color: var(--gray-100);
   display: flex;
@@ -362,7 +367,7 @@ text {
   justify-content: space-between;
 }
 
-#projects>section>div>p, a{
+#projects>div>section>div>p, a{
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -370,11 +375,11 @@ text {
   padding-right: 1em;
 }
 
-#projects>section>div>p{
+#projects>div>section>div>p{
   background-color: var(--black-200);
 }
 
-#projects>section>div>div{
+#projects>div>section>div>div{
   display: flex;
   align-items: center;
   border-bottom: none;
@@ -382,20 +387,20 @@ text {
   border-right: none;
 }
 
-#projects>section>div>div>a{
+#projects>div>section>div>div>a{
   text-decoration: none;
   color: var(--white-200);
 }
 
-#projects>section>div>div>a:nth-of-type(1){
+#projects>div>section>div>div>a:nth-of-type(1){
   background-color: var(--gray-200);
 }
 
-#projects>section>div>div>a:nth-of-type(2){
+#projects>div>section>div>div>a:nth-of-type(2){
   background-color: var(--gray-300);
 }
 
-#projects>section>div>div>a:hover{
+#projects>div>section>div>div>a:hover{
   transition: all 0.3s ease;
   background-color: var(--orange-200);
   color: var(--black-200);
