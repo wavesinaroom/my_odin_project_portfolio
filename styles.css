@@ -23,7 +23,7 @@ body{
   margin-right: 30vw;
 }
 
-@media (max-width:800px){
+@media (max-width:810px){
   body{
     margin-left: 0vw;
     margin-right:0vw;
