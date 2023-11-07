@@ -421,20 +421,21 @@ text {
   
 #skills>section:nth-of-type(2) dd{
   background-color: var(--black-300);
-  border: 1px solid var(--gray-300);
+  border: 1px groove var(--gray-300);
   border-top: none;
   border-bottom: none;
   border-left: none;
   margin-left: 0;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   padding-left: 2em;
   padding-right: 1em;
   padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
-#skills>section:nth-of-type(2) dt{
-  border: 1px solid var(--gray-300);
+#skills>section:nth-of-type(2) dt, h4{
+  background-color: var(--black-200);
+  border: 1px groove var(--gray-300);
   border-top: none;
   border-right: none;
   color: var(--white-200);
@@ -442,6 +443,20 @@ text {
   padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+
+#skills>section:nth-of-type(2) ul{
+  margin: 0; 
+  border: 1px groove var(--gray-300);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+#skills>section:nth-of-type(2) li{
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 #skills>section:nth-of-type(1){
