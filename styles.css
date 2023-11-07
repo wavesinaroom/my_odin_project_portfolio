@@ -314,7 +314,7 @@ text {
   grid-auto-flow: row;
   margin: 3em;
   margin-top: 0;
-  margin-bottom: 30vh;
+  margin-bottom: 25vh;
 }
 
 #projects>h4{
@@ -416,7 +416,7 @@ text {
                        "menu content content content";
   margin: 3em;
   margin-top: 0;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   box-shadow: 19px 19px var(--gray-100);
 }
   
