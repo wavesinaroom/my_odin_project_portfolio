@@ -421,7 +421,12 @@ text {
   
 #skills>section:nth-of-type(2) dd{
   background-color: var(--black-300);
+  border: 1px solid var(--gray-300);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   margin-left: 0;
+  margin-bottom: 2em;
   padding-left: 2em;
   padding-right: 1em;
   padding-top: 1em;
@@ -429,10 +434,8 @@ text {
 }
 
 #skills>section:nth-of-type(2) dt{
-  background-color: var(--black-200);
-  border: 3px solid var(--gray-300);
+  border: 1px solid var(--gray-300);
   border-top: none;
-  border-left: none;
   border-right: none;
   color: var(--white-200);
   padding-left: 1em;
